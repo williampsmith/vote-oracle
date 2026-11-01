@@ -45,7 +45,7 @@ export function AddressStep({
     const d = ballot.districts;
     const faces = ballot.races.flatMap((r) => r.candidates).slice(0, 9);
     return (
-      <section className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
+      <section className="mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-0 lg:py-16 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
         <button onClick={() => setBallot(null)} className="self-start text-sm text-muted hover:text-paper">
           ← Change address
         </button>
@@ -87,7 +87,7 @@ export function AddressStep({
   }
 
   return (
-    <section className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
+    <section className="mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-0 lg:py-16 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
       <button onClick={onBack} className="self-start text-sm text-muted hover:text-paper">
         ← Back
       </button>

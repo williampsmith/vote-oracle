@@ -116,7 +116,8 @@ export function Analyzing({
   const stageIdx = stage === "done" ? STAGES.length : STAGES.findIndex((s) => s.id === stage);
 
   return (
-    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col items-center px-6 pb-10 pt-14 text-center">
+    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col items-center px-6 pb-10 pt-14 text-center lg:grid lg:max-w-5xl lg:grid-cols-2 lg:content-center lg:gap-x-16 lg:pb-14">
+      <div className="flex flex-col items-center lg:row-span-2">
       <Orb />
       <h1 className="mt-10 font-display text-3xl font-medium leading-tight">The Oracle is consulting…</h1>
       <div className="mt-2 h-6 overflow-hidden text-sm text-muted">
@@ -133,7 +134,9 @@ export function Analyzing({
         </AnimatePresence>
       </div>
 
-      <ol className="mt-10 grid w-full gap-3 text-left">
+      </div>
+      <div className="w-full">
+      <ol className="mt-10 grid w-full gap-3 text-left lg:mt-0">
         {STAGES.map((s, i) => {
           const state = i < stageIdx ? "done" : i === stageIdx ? "active" : "todo";
           return (
@@ -188,7 +191,8 @@ export function Analyzing({
           </div>
         </div>
       )}
-      <p className="mt-auto pt-8 text-xs text-muted">This usually takes 30–90 seconds. Keep this tab open.</p>
+      </div>
+      <p className="mt-auto pt-8 text-xs text-muted lg:col-start-2 lg:mt-6 lg:pt-0 lg:text-left">This usually takes 30–90 seconds. Keep this tab open.</p>
     </section>
   );
 }

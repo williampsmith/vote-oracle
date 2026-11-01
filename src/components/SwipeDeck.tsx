@@ -111,7 +111,14 @@ export function SwipeDeck({
   const remaining = QUESTIONS.length - index;
 
   return (
-    <section className="mx-auto flex h-dvh max-w-md flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4">
+    <div className="relative">
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-0 hidden scale-110 bg-cover bg-center opacity-35 blur-3xl transition-[background-image] duration-500 lg:block"
+        style={{ backgroundImage: `url(${q.image})` }}
+      />
+      <div aria-hidden className="pointer-events-none fixed inset-0 hidden bg-ink/40 lg:block" />
+    <section className="relative mx-auto flex h-dvh max-w-md flex-col px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4 lg:max-w-[32rem] lg:py-8">
       <header className="flex items-center gap-3 px-1">
         <button
           onClick={undo}
@@ -177,10 +184,26 @@ export function SwipeDeck({
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
         </ActionButton>
       </div>
-      <p className="mt-3 text-center text-xs text-muted">
+      <p className="mt-3 text-center text-xs text-muted lg:hidden">
         {remaining > 1 ? `${remaining - 1} to go` : "Last one!"} · swipe, tap, or use arrow keys
       </p>
+      <p className="mt-4 hidden items-center justify-center gap-4 text-xs text-muted lg:flex">
+        <span><Kbd>←</Kbd> Nah</span>
+        <span><Kbd>↑</Kbd> Not sure</span>
+        <span><Kbd>→</Kbd> Yeah</span>
+        <span><Kbd>⌫</Kbd> Undo</span>
+        <span className="text-paper/60">· {remaining > 1 ? `${remaining - 1} to go` : "Last one!"}</span>
+      </p>
     </section>
+    </div>
+  );
+}
+
+function Kbd({ children }: { children: React.ReactNode }) {
+  return (
+    <kbd className="mr-1 inline-grid h-6 min-w-6 place-items-center rounded-md border border-white/20 bg-white/5 px-1.5 font-sans text-[11px] text-paper">
+      {children}
+    </kbd>
   );
 }
 
@@ -193,7 +216,7 @@ function CardFace({ text, image, dim = false }: { text: string; image: string; d
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/95" />
       <div className="absolute inset-x-0 bottom-0 p-6 pb-8">
-        <p className={`font-display text-[1.65rem] font-medium leading-[1.18] text-white text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,.6)] ${dim ? "opacity-0" : ""}`}>
+        <p className={`font-display text-[1.65rem] font-medium leading-[1.18] lg:text-[1.9rem] text-white text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,.6)] ${dim ? "opacity-0" : ""}`}>
           {text}
         </p>
       </div>

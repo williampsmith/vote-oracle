@@ -11,6 +11,7 @@ import { Priorities } from "./Priorities";
 import { AddressStep } from "./AddressStep";
 import { Analyzing } from "./Analyzing";
 import { ResultsView } from "./ResultsView";
+import { Shell } from "./Shell";
 
 type Stage = "gate" | "denied" | "intro" | "swipe" | "priorities" | "address" | "analyzing" | "results";
 
@@ -45,9 +46,21 @@ export function Oracle() {
           transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
           className="min-h-dvh"
         >
-          {stage === "gate" && <Gate onYes={() => setStage("intro")} onNo={() => setStage("denied")} />}
-          {stage === "denied" && <Denied onChange={() => setStage("gate")} />}
-          {stage === "intro" && <Intro onStart={() => setStage("swipe")} />}
+          {stage === "gate" && (
+            <Shell tagline="Every race. Every proposition. Decoded for you.">
+              <Gate onYes={() => setStage("intro")} onNo={() => setStage("denied")} />
+            </Shell>
+          )}
+          {stage === "denied" && (
+            <Shell>
+              <Denied onChange={() => setStage("gate")} />
+            </Shell>
+          )}
+          {stage === "intro" && (
+            <Shell tagline="Swipe through what you actually believe.">
+              <Intro onStart={() => setStage("swipe")} />
+            </Shell>
+          )}
           {stage === "swipe" && (
             <SwipeDeck
               answers={answers}
@@ -56,6 +69,7 @@ export function Oracle() {
             />
           )}
           {stage === "priorities" && (
+            <Shell tagline="What would you fix first?">
             <Priorities
               answers={answers}
               value={priorities}
@@ -63,14 +77,17 @@ export function Oracle() {
               onBack={() => setStage("swipe")}
               onNext={() => setStage("address")}
             />
+            </Shell>
           )}
           {stage === "address" && (
+            <Shell tagline="Your ballot depends on exactly where you live.">
             <AddressStep
               ballot={ballot}
               setBallot={setBallot}
               onBack={() => setStage("priorities")}
               onNext={() => setStage("analyzing")}
             />
+            </Shell>
           )}
           {stage === "analyzing" && ballot && (
             <Analyzing

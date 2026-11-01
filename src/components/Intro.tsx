@@ -6,7 +6,7 @@ import { Logo } from "./Logo";
 export function Intro({ onStart }: { onStart: () => void }) {
   const minutes = Math.round((QUESTIONS.length * 4.5) / 60);
   return (
-    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-10">
+    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-0 lg:py-16 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-10">
       <Logo />
       <div className="mt-12 flex-1">
         <h1 className="font-display text-[2.5rem] font-medium leading-[1.05] text-balance">

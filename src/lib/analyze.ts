@@ -114,10 +114,45 @@ function matchCandidate<T extends { name: string }>(pick: string, candidates: T[
   return scored.length === 1 || (scored[0] && scored[0].overlap > (scored[1]?.overlap ?? 0)) ? scored[0].c : null;
 }
 
-/** Keep justifications to two sentences, whatever the model wrote. */
-function brief(text: string) {
+/** Keep justifications to ≤2 sentences and ≤ maxWords words, whatever the model wrote. */
+function brief(text: string, maxWords = 40) {
   const sentences = text.trim().match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) ?? [text];
-  return sentences.slice(0, 2).join("").trim();
+  const kept: string[] = [];
+  let count = 0;
+  for (const sent of sentences.slice(0, 2)) {
+    const n = sent.trim().split(/\s+/).length;
+    if (kept.length && count + n > maxWords) break;
+    kept.push(sent);
+    count += n;
+  }
+  const out = kept.join("").trim();
+  const ws = out.split(/\s+/);
+  return ws.length > maxWords ? ws.slice(0, maxWords).join(" ").replace(/[,;:—–-]+$/, "") + "…" : out;
+}
+
+const NOUNS: Record<string, [string, string]> = {
+  econ: ["Free-Marketeer", "Safety-Net Builder"],
+  social: ["Traditionalist", "Changemaker"],
+  safety: ["Enforcer", "Reformer"],
+  climate: ["Realist", "Environmentalist"],
+  housing: ["Neighborhood Guardian", "Builder"],
+  immigration: ["Rule-Keeper", "Welcomer"],
+  governance: ["Institutionalist", "Maverick"],
+};
+
+/** Deterministic archetype used when the model's title doesn't follow the format. */
+function fallbackTitle(axes: { axis: string; score: number }[]) {
+  const prag = axes.find((a) => a.axis === "pragmatism")?.score ?? 0;
+  const adj = prag >= 20 ? "Pragmatic" : prag <= -20 ? "Principled" : "Independent";
+  const top = axes.filter((a) => a.axis in NOUNS).sort((a, b) => Math.abs(b.score) - Math.abs(a.score))[0];
+  const noun = top ? NOUNS[top.axis][top.score >= 0 ? 1 : 0] : "Voter";
+  return `The ${adj} ${noun}`;
+}
+
+function cleanTitle(title: string, axes: { axis: string; score: number }[]) {
+  const t = title.trim();
+  const ok = /^the\s/i.test(t) && t.split(/\s+/).length <= 5 && !/[:;,]/.test(t) && !/democrat|republican|liberal|conservative|progressive|left|right/i.test(t);
+  return ok ? t : fallbackTitle(axes);
 }
 
 export async function analyze(
@@ -311,7 +346,7 @@ ${localNow ? JSON.stringify(localNow, null, 1) : "None provided — return local
 
   const seen = new Set<string>();
   return {
-    archetype: output.archetype,
+    archetype: { title: cleanTitle(output.archetype.title, axes), summary: brief(output.archetype.summary, 45) },
     axes,
     picks,
     propositions,

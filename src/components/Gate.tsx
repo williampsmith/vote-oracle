@@ -4,7 +4,7 @@ import { Logo } from "./Logo";
 
 export function Gate({ onYes, onNo }: { onYes: () => void; onNo: () => void }) {
   return (
-    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col justify-between px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-10">
+    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-14 lg:py-16 justify-between px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-10">
       <Glow />
       <Logo />
       <div className="relative">
@@ -37,7 +37,7 @@ export function Gate({ onYes, onNo }: { onYes: () => void; onNo: () => void }) {
 
 export function Denied({ onChange }: { onChange: () => void }) {
   return (
-    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col justify-center px-6 py-10">
+    <section className="relative mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-0 lg:py-16 justify-center px-6 py-10">
       <Logo />
       <div className="mt-16">
         <h1 className="font-display text-4xl font-medium leading-tight">Sorry — California only, for now.</h1>
@@ -59,7 +59,7 @@ export function Denied({ onChange }: { onChange: () => void }) {
 
 function Glow() {
   return (
-    <div aria-hidden className="pointer-events-none absolute inset-0 -z-0 overflow-hidden">
+    <div aria-hidden className="pointer-events-none absolute inset-0 -z-0 overflow-hidden lg:hidden">
       <div className="absolute -right-24 top-24 h-72 w-72 rounded-full bg-ember/30 blur-3xl" />
       <div className="absolute -left-20 bottom-40 h-64 w-64 rounded-full bg-gold/15 blur-3xl" />
     </div>

@@ -31,7 +31,7 @@ export function Priorities({
     onChange(value.includes(a) ? value.filter((x) => x !== a) : value.length >= 3 ? [...value.slice(1), a] : [...value, a]);
 
   return (
-    <section className="mx-auto flex min-h-dvh max-w-md flex-col px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
+    <section className="mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-0 lg:py-16 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
       <button onClick={onBack} className="self-start text-sm text-muted hover:text-paper">
         ← Back to questions
       </button>

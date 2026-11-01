@@ -27,7 +27,7 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
   );
 
   return (
-    <div className="mx-auto max-w-2xl px-5 pb-24 pt-8">
+    <div className="mx-auto max-w-2xl px-5 pb-24 pt-8 lg:max-w-6xl lg:px-10">
       <header className="no-print flex items-center justify-between">
         <Logo />
         <button onClick={onRestart} className="text-sm text-muted underline-offset-4 hover:text-paper hover:underline">
@@ -35,9 +35,11 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
         </button>
       </header>
 
-      <motion.section initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mt-10">
+      <div className="lg:mt-10 lg:grid lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] lg:gap-12">
+      <aside className="lg:sticky lg:top-8 lg:max-h-[calc(100dvh-4rem)] lg:self-start lg:overflow-y-auto lg:pb-4">
+      <motion.section initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="mt-10 lg:mt-0">
         <p className="text-sm font-medium uppercase tracking-[0.18em] text-ember">Your voter archetype</p>
-        <h1 className="mt-2 font-display text-[2.6rem] font-medium leading-[1.04] text-balance sm:text-5xl">
+        <h1 className="mt-2 font-display text-[2.6rem] font-medium leading-[1.04] text-balance sm:text-5xl lg:text-[2.75rem]">
           {r.archetype.title}
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-paper/80">{r.archetype.summary}</p>
@@ -48,11 +50,21 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
         <p className="mt-1 text-sm text-muted">Based on your answers. The further a bar reaches, the stronger the pull.</p>
         <LeanChart axes={r.axes} />
       </section>
+      <div className="no-print mt-4 hidden grid-cols-2 gap-3 lg:grid">
+        <button onClick={() => window.print()} className="h-11 rounded-xl border border-white/15 text-sm font-medium transition hover:bg-white/5">
+          Print / save PDF
+        </button>
+        <button onClick={onRestart} className="h-11 rounded-xl border border-white/15 text-sm font-medium transition hover:bg-white/5">
+          Start over
+        </button>
+      </div>
+      </aside>
+      <div className="[&>section:first-child]:lg:mt-0">
 
       {grouped.map((g) => (
         <section key={g.title} className="mt-12">
           <SectionTitle>{g.title}</SectionTitle>
-          <div className="mt-4 grid gap-3">
+          <div className="mt-4 grid gap-3 xl:grid-cols-2">
             {g.picks.map((p, i) => (
               <PickCard key={p.raceId} p={p} i={i} />
             ))}
@@ -62,7 +74,7 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
 
       <section className="mt-12">
         <SectionTitle>Statewide propositions</SectionTitle>
-        <div className="mt-4 grid gap-3">
+        <div className="mt-4 grid gap-3 xl:grid-cols-2">
           {r.propositions.map((p, i) => (
             <motion.article
               key={p.number}
@@ -93,7 +105,7 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
               Researched from local sources for {r.location.city ?? r.location.county}. Local ballots vary by precinct, so
               compare against your official sample ballot.
             </p>
-            <div className="mt-4 grid gap-3">
+            <div className="mt-4 grid gap-3 xl:grid-cols-2">
               {r.local.contests.map((c) => (
                 <article key={c.office} className="print-card rounded-2xl border border-white/10 bg-white/[0.03] p-4">
                   <p className="text-xs font-semibold uppercase tracking-wider text-muted">{c.office}</p>
@@ -132,7 +144,7 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
 
       <EmailForm />
 
-      <section className="no-print mt-8 grid grid-cols-2 gap-3">
+      <section className="no-print mt-8 grid grid-cols-2 gap-3 lg:hidden">
         <button onClick={() => window.print()} className="h-12 rounded-2xl border border-white/15 font-medium transition hover:bg-white/5">
           Print / save PDF
         </button>
@@ -178,6 +190,8 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
           </details>
         )}
       </footer>
+      </div>
+      </div>
     </div>
   );
 }

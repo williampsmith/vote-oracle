@@ -60,3 +60,12 @@ body {
   .print-card * { color: black !important; }
   .grain::after { display: none; }
 }
+
+@keyframes mosaic-drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+.mosaic-drift { animation: mosaic-drift 120s linear infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .mosaic-drift { animation: none; }
+}
