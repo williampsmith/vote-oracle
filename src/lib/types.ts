@@ -55,8 +55,21 @@ export type Results = {
 };
 
 export type BallotPreview = {
-  location: { matchedAddress: string; county: string | null; city: string | null; lat: number; lng: number; zip: string | null };
+  location: {
+    matchedAddress: string;
+    county: string | null;
+    city: string | null;
+    lat: number;
+    lng: number;
+    zip: string | null;
+    districts?: Results["districts"];
+  };
   districts: Results["districts"];
+  /** ZIP lookups only: chambers where the ZIP spans districts with different races. */
+  splits?: {
+    chamber: "congress" | "senate" | "assembly" | "boe";
+    options: { district: number; share: number; candidates: string[] }[];
+  }[];
   raceCount: number;
   propCount: number;
   races: { id: string; office: string; candidates: PersonCard[] }[];

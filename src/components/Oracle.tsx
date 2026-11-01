@@ -80,7 +80,7 @@ export function Oracle() {
             </Shell>
           )}
           {stage === "address" && (
-            <Shell tagline="Your ballot depends on exactly where you live.">
+            <Shell tagline="Five digits. Your whole ballot.">
             <AddressStep
               ballot={ballot}
               setBallot={setBallot}

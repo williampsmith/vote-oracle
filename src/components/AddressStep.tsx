@@ -5,6 +5,18 @@ import { motion } from "motion/react";
 import type { BallotPreview } from "@/lib/types";
 import { Avatar } from "./Avatar";
 
+const CHAMBER_LABEL = {
+  congress: "U.S. House",
+  senate: "State Senate",
+  assembly: "State Assembly",
+  boe: "Board of Equalization",
+} as const;
+
+type Chamber = keyof typeof CHAMBER_LABEL;
+
+const inputClass =
+  "h-14 rounded-2xl border border-white/10 bg-white/[0.04] px-4 text-lg outline-none transition placeholder:text-white/25 focus:border-ember";
+
 export function AddressStep({
   ballot,
   setBallot,
@@ -16,20 +28,20 @@ export function AddressStep({
   onBack: () => void;
   onNext: () => void;
 }) {
+  const [zip, setZip] = useState(ballot?.location.zip ?? "");
   const [street, setStreet] = useState("");
-  const [cityZip, setCityZip] = useState("");
+  const [useStreet, setUseStreet] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  async function lookup(e: React.FormEvent) {
-    e.preventDefault();
+  async function fetchBallot(body: object) {
     setError(null);
     setLoading(true);
     try {
       const res = await fetch("/api/ballot", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ address: `${street}, ${cityZip}, CA` }),
+        body: JSON.stringify(body),
       });
       const json = await res.json();
       if (!res.ok) throw new Error(json.error ?? "Lookup failed");
@@ -41,13 +53,26 @@ export function AddressStep({
     }
   }
 
+  function lookup(e: React.FormEvent) {
+    e.preventDefault();
+    const z = zip.trim();
+    if (useStreet && street.trim()) fetchBallot({ address: `${street.trim()}, ${z}, CA` });
+    else fetchBallot({ zip: z });
+  }
+
+  function choose(chamber: Chamber, district: number) {
+    if (!ballot?.location.zip) return;
+    fetchBallot({ zip: ballot.location.zip, choose: { ...stripNulls(ballot.districts), [chamber]: district } });
+  }
+
   if (ballot) {
     const d = ballot.districts;
     const faces = ballot.races.flatMap((r) => r.candidates).slice(0, 9);
+    const splits = ballot.splits ?? [];
     return (
       <section className="mx-auto flex min-h-dvh max-w-md flex-col lg:min-h-0 lg:gap-0 lg:py-16 px-6 pb-[max(2rem,env(safe-area-inset-bottom))] pt-8">
         <button onClick={() => setBallot(null)} className="self-start text-sm text-muted hover:text-paper">
-          ← Change address
+          ← Change location
         </button>
         <p className="mt-8 text-sm font-medium uppercase tracking-[0.18em] text-ember">Ballot found</p>
         <h1 className="mt-2 font-display text-[2.2rem] font-medium leading-[1.08] text-balance">
@@ -63,6 +88,58 @@ export function AddressStep({
           ))}
         </div>
 
+        {splits.length > 0 && (
+          <div className="mt-6 rounded-2xl border border-gold/30 bg-gold/[0.06] p-4">
+            <p className="font-semibold">Your ZIP crosses district lines</p>
+            <p className="mt-1 text-sm leading-relaxed text-muted">
+              We picked where most of your neighbors vote. If the names on your sample ballot match the other option,
+              switch it — or{" "}
+              <button
+                onClick={() => {
+                  setUseStreet(true);
+                  setBallot(null);
+                }}
+                className="text-paper underline decoration-gold underline-offset-2"
+              >
+                use your street address
+              </button>{" "}
+              for an exact match.
+            </p>
+            <div className="mt-4 grid gap-4">
+              {splits.map((s) => (
+                <div key={s.chamber}>
+                  <p className="text-xs font-medium uppercase tracking-[0.14em] text-muted">{CHAMBER_LABEL[s.chamber]}</p>
+                  <div className="mt-2 grid gap-2" role="radiogroup" aria-label={CHAMBER_LABEL[s.chamber]}>
+                    {s.options.map((o) => {
+                      const on = d[s.chamber] === o.district;
+                      return (
+                        <button
+                          key={o.district}
+                          role="radio"
+                          aria-checked={on}
+                          disabled={loading}
+                          onClick={() => !on && choose(s.chamber, o.district)}
+                          className={`rounded-xl border px-3 py-2.5 text-left text-sm transition disabled:opacity-60 ${
+                            on ? "border-gold bg-gold/15" : "border-white/10 bg-white/[0.03] hover:bg-white/[0.06]"
+                          }`}
+                        >
+                          <span className="flex items-baseline justify-between gap-3">
+                            <span className="font-semibold">District {o.district}</span>
+                            <span className="text-xs text-muted">{Math.round(o.share * 100)}% of ZIP</span>
+                          </span>
+                          <span className="mt-0.5 block text-muted">
+                            {o.candidates.length ? o.candidates.join(" vs. ") : "No race on the ballot this year"}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <dl className="mt-6 grid grid-cols-2 gap-3 text-sm">
           {ballot.location.county && <Fact k="County" v={ballot.location.county.replace(/ County$/, "")} />}
           {d.congress && <Fact k="U.S. House" v={`District ${d.congress}`} />}
@@ -70,6 +147,11 @@ export function AddressStep({
           {d.assembly && <Fact k="State Assembly" v={`District ${d.assembly}`} />}
           {d.boe && <Fact k="Board of Equalization" v={`District ${d.boe}`} />}
         </dl>
+        {error && (
+          <p role="alert" className="mt-4 rounded-xl bg-rose/10 px-4 py-3 text-sm text-rose">
+            {error}
+          </p>
+        )}
         <p className="mt-4 text-xs leading-relaxed text-muted">
           Includes statewide offices, your districts, and all statewide propositions. The Oracle will also try to look up
           local county and city contests.
@@ -78,7 +160,8 @@ export function AddressStep({
         <div className="flex-1" />
         <button
           onClick={onNext}
-          className="mt-8 h-14 rounded-2xl bg-ember text-lg font-semibold text-ink shadow-[0_10px_40px_-10px_rgba(240,106,42,.7)] transition hover:bg-ember-2 active:scale-[0.98]"
+          disabled={loading}
+          className="mt-8 h-14 rounded-2xl bg-ember text-lg font-semibold text-ink shadow-[0_10px_40px_-10px_rgba(240,106,42,.7)] transition hover:bg-ember-2 active:scale-[0.98] disabled:opacity-60"
         >
           Reveal my picks ✦
         </button>
@@ -93,43 +176,58 @@ export function AddressStep({
       </button>
       <p className="mt-8 text-sm font-medium uppercase tracking-[0.18em] text-ember">Last step</p>
       <h1 className="mt-2 font-display text-[2.2rem] font-medium leading-[1.08] text-balance">
-        Where are you registered to vote?
+        What&apos;s your ZIP code?
       </h1>
       <p className="mt-3 text-muted">
-        Your address decides which districts and candidates are on your ballot. We use it only for this lookup and
-        never store it.
+        That&apos;s all we need to find your ballot. If your ZIP straddles district lines, we&apos;ll show you the
+        options.
       </p>
 
       <form onSubmit={lookup} className="mt-8 grid gap-3">
         <label className="grid gap-1.5">
-          <span className="text-sm text-muted">Street address</span>
+          <span className="text-sm text-muted">ZIP code</span>
           <input
             required
-            autoComplete="street-address"
-            value={street}
-            onChange={(e) => setStreet(e.target.value)}
-            placeholder="1315 10th St"
-            className="h-14 rounded-2xl border border-white/10 bg-white/[0.04] px-4 text-lg outline-none transition placeholder:text-white/25 focus:border-ember"
-          />
-        </label>
-        <label className="grid gap-1.5">
-          <span className="text-sm text-muted">City or ZIP code</span>
-          <input
-            required
+            inputMode="numeric"
+            pattern="\d{5}"
+            maxLength={5}
             autoComplete="postal-code"
-            value={cityZip}
-            onChange={(e) => setCityZip(e.target.value)}
-            placeholder="Sacramento 95814"
-            className="h-14 rounded-2xl border border-white/10 bg-white/[0.04] px-4 text-lg outline-none transition placeholder:text-white/25 focus:border-ember"
+            value={zip}
+            onChange={(e) => setZip(e.target.value.replace(/\D/g, "").slice(0, 5))}
+            placeholder="95814"
+            className={`${inputClass} tracking-[0.2em]`}
           />
         </label>
+        {useStreet ? (
+          <label className="grid gap-1.5">
+            <span className="text-sm text-muted">Street address (optional, for exact districts)</span>
+            <input
+              autoComplete="address-line1"
+              value={street}
+              onChange={(e) => setStreet(e.target.value)}
+              placeholder="1315 10th St"
+              className={inputClass}
+            />
+            <span className="text-xs leading-relaxed text-muted">
+              Sent once to the U.S. Census geocoder to find your districts. Never stored or logged.
+            </span>
+          </label>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setUseStreet(true)}
+            className="justify-self-start text-sm text-muted underline decoration-white/20 underline-offset-4 hover:text-paper"
+          >
+            Prefer exact districts? Add your street address
+          </button>
+        )}
         {error && (
           <p role="alert" className="rounded-xl bg-rose/10 px-4 py-3 text-sm text-rose">
             {error}
           </p>
         )}
         <button
-          disabled={loading}
+          disabled={loading || zip.length !== 5}
           className="mt-4 h-14 rounded-2xl bg-paper text-lg font-semibold text-ink transition hover:bg-white active:scale-[0.98] disabled:opacity-60"
         >
           {loading ? "Finding your ballot…" : "Find my ballot"}
@@ -143,6 +241,10 @@ export function AddressStep({
       </p>
     </section>
   );
+}
+
+function stripNulls(d: BallotPreview["districts"]) {
+  return Object.fromEntries(Object.entries(d).filter(([, v]) => v != null));
 }
 
 function Fact({ k, v }: { k: string; v: string }) {

@@ -16,4 +16,12 @@ export const locationSchema = z.object({
   county: z.string().max(80).nullable(),
   city: z.string().max(80).nullable(),
   zip: z.string().max(10).nullable(),
+  districts: z
+    .object({
+      congress: z.number().int().min(1).max(52).nullable(),
+      senate: z.number().int().min(1).max(40).nullable(),
+      assembly: z.number().int().min(1).max(80).nullable(),
+      boe: z.number().int().min(1).max(4).nullable(),
+    })
+    .optional(),
 });

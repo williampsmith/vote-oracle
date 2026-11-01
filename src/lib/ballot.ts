@@ -5,6 +5,7 @@ import congressGeo from "@/data/districts/congress.json";
 import senateGeo from "@/data/districts/senate.json";
 import assemblyGeo from "@/data/districts/assembly.json";
 import boeGeo from "@/data/districts/boe.json";
+import zipData from "@/data/zips.json";
 
 export type Candidate = {
   name: string;
@@ -34,6 +35,8 @@ export type Location = {
   county: string | null;
   city: string | null;
   zip: string | null;
+  /** Set for ZIP lookups: districts chosen from the ZIP table instead of a point lookup. */
+  districts?: Districts;
 };
 
 export type Districts = {
@@ -143,7 +146,7 @@ export async function geocode(address: string): Promise<Location> {
 
 export function buildBallot(location: Location): Ballot {
   const { lat, lng } = location;
-  const districts: Districts = {
+  const districts: Districts = location.districts ?? {
     congress: findDistrict(congressGeo as unknown as Geo, lng, lat),
     senate: findDistrict(senateGeo as unknown as Geo, lng, lat),
     assembly: findDistrict(assemblyGeo as unknown as Geo, lng, lat),
@@ -199,6 +202,79 @@ export function buildBallot(location: Location): Ballot {
   );
 
   return { location, districts, races, propositions: statewide.propositions };
+}
+
+// ---- ZIP-only lookup ------------------------------------------------------------------------
+// Built by scripts/build-zips.mjs: population shares of each ZIP across districts, county and city.
+
+type Share<T> = [T, number][];
+type ZipEntry = {
+  pop: number;
+  lat: number;
+  lng: number;
+  county: Share<string | null>;
+  city: Share<string | null>;
+} & Record<Chamber, Share<number | null>>;
+const zips = zipData as unknown as Record<string, ZipEntry>;
+
+export const CHAMBERS = ["congress", "senate", "assembly", "boe"] as const;
+export type Chamber = (typeof CHAMBERS)[number];
+
+/** Districts under this share of a ZIP's residents aren't offered as choices. */
+const MIN_SHARE = 0.03;
+
+export type ZipSplit = {
+  chamber: Chamber;
+  options: { district: number; share: number; candidates: string[] }[];
+};
+
+const raceCandidates = (chamber: Chamber, district: number): string[] => {
+  if (chamber === "boe") {
+    const r = statewide.races.find((x) => x.level === "boe" && x.boeDistrict === district);
+    return r ? r.candidates.map((c) => c.name) : [];
+  }
+  const list = cand[chamber][String(district)];
+  return Array.isArray(list) ? (list as Candidate[]).map((c) => c.name) : [];
+};
+
+/**
+ * Resolves a ZIP to a location plus the districts most of its residents live in. Where the ZIP is
+ * split, returns the alternatives so the voter can choose (or give a street address instead).
+ */
+export function lookupZip(zip: string, chosen: Partial<Districts> = {}): { location: Location; splits: ZipSplit[] } {
+  const e = zips[zip];
+  if (!e) {
+    throw new GeocodeError(
+      /^9[0-6]\d{3}$/.test(zip)
+        ? "We don't have that ZIP on file (it may be PO-box only). Try your street address instead."
+        : "That isn't a California ZIP code.",
+    );
+  }
+  const splits: ZipSplit[] = [];
+  const districts = {} as Districts;
+  for (const chamber of CHAMBERS) {
+    const options = e[chamber]
+      .filter((o): o is [number, number] => o[0] != null && o[1] >= MIN_SHARE)
+      .map(([district, share]) => ({ district, share, candidates: raceCandidates(chamber, district) }));
+    const pick = options.find((o) => o.district === chosen[chamber]) ?? options[0];
+    districts[chamber] = pick?.district ?? null;
+    // Only a real choice if the alternatives put different races on the ballot.
+    if (new Set(options.map((o) => o.candidates.join("|"))).size > 1) splits.push({ chamber, options });
+  }
+  const city = e.city.find(([c]) => c != null)?.[0] ?? null;
+  const county = e.county[0]?.[0] ?? null;
+  return {
+    location: {
+      matchedAddress: `ZIP ${zip}${city ? ` · ${city}` : county ? ` · ${county}` : ""}`,
+      lat: e.lat,
+      lng: e.lng,
+      county,
+      city,
+      zip,
+      districts,
+    },
+    splits,
+  };
 }
 
 export const ELECTION_DATE = statewide.electionDate;
