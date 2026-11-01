@@ -1,0 +1,613 @@
+{
+  "electionDate": "2026-11-03",
+  "sources": [
+    "https://elections.cdn.sos.ca.gov/statewide-elections/2026-general/cert-list-candidates.pdf",
+    "https://www.sos.ca.gov/elections/ballot-measures/qualified-ballot-measures",
+    "https://voterguide.sos.ca.gov/quick-reference-guide/",
+    "https://voterguide.sos.ca.gov/candidates/",
+    "https://elections.cdn.sos.ca.gov/sov/2026-primary/sov/complete-sov.pdf",
+    "https://en.wikipedia.org/wiki/2026_California_elections",
+    "https://en.wikipedia.org/wiki/2026_California_gubernatorial_election",
+    "https://calmatters.org/california-voter-guide-2026/governor/",
+    "https://calmatters.org/california-voter-guide-2026/lieutenant-governor/",
+    "https://calmatters.org/california-voter-guide-2026/attorney-general/",
+    "https://calmatters.org/california-voter-guide-2026/secretary-of-state/",
+    "https://calmatters.org/california-voter-guide-2026/treasurer/",
+    "https://calmatters.org/california-voter-guide-2026/controller/",
+    "https://calmatters.org/california-voter-guide-2026/insurance-commissioner/",
+    "https://calmatters.org/california-voter-guide-2026/superintendent-of-public-instruction/",
+    "https://calmatters.org/california-voter-guide-2026/board-of-equalization/",
+    "https://calmatters.org/california-voter-guide-2026/proposition-5-recall-reform/",
+    "https://calmatters.org/california-voter-guide-2026/proposition-37-homebuyers-loan/",
+    "https://calmatters.org/california-voter-guide-2026/proposition-40-billionaire-tax/",
+    "https://calmatters.org/california-voter-guide-2026/proposition-44-clinic-funding/",
+    "https://laist.com/news/politics/voter-guides/2026-election-california-general-board-of-equalization-district-3",
+    "https://ballotpedia.org/Michael_Gates_(California)",
+    "https://ballotpedia.org/Sonja_Shaw_(California)",
+    "https://ballotpedia.org/Denis_Bilodeau_(California)"
+  ],
+  "races": [
+    {
+      "id": "governor",
+      "office": "Governor",
+      "level": "statewide",
+      "description": "The governor is California's chief executive: proposes the state budget, signs or vetoes legislation, appoints judges and agency heads, and directs the state's emergency response.",
+      "candidates": [
+        {
+          "name": "Xavier Becerra",
+          "party": "Democratic",
+          "ballotDesignation": "Voting Rights Attorney",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/HHS_Xavier_Becerra.jpg/500px-HHS_Xavier_Becerra.jpg",
+          "summary": "Becerra represented Los Angeles in Congress for more than two decades, served as California attorney general from 2017 to 2021, and was U.S. Secretary of Health and Human Services under President Joe Biden from 2021 to 2025. His platform focuses on housing and utility costs, and he has said he would take a similar approach to the Trump administration as he did as attorney general, when he filed more than 100 lawsuits against it.",
+          "positions": {
+            "economy/taxes": "Supports a progressive income tax and Proposition 3's extension of higher rates on high earners; opposes Proposition 40's one-time billionaire tax; proposes declaring a state of emergency to freeze utility and insurance rates.",
+            "housing": "Would use state resources to finance about 40,000 already-approved affordable units, push cities to zone for more apartments and condos, expand down payment assistance, and limit bulk home purchases by large corporations.",
+            "homelessness": "Would create an ongoing state funding stream for rental assistance and prevention services; says people should not be allowed to voluntarily remain on the street when offered shelter.",
+            "public safety/criminal justice": "Voted for Proposition 36 (2024) and says he would fully fund it and its court-mandated drug treatment; says sentencing decisions should generally be left to judges.",
+            "environment/energy": "Supports California's clean energy transition goals but says he is open to revising them, including the 2035 ban on new gas car sales, if they make fuel and energy unaffordable.",
+            "immigration": "Supports California's sanctuary law, which he defended in court as attorney general.",
+            "healthcare": "Previously supported single-payer; now supports expanding state coverage to as many residents as possible, cutting insurer administrative costs, and a fund to recruit and retain healthcare workers.",
+            "technology": "Supports banning children under 16 from social media and requiring AI developers to disclose how the technology is used in employment decisions."
+          }
+        },
+        {
+          "name": "Steve Hilton",
+          "party": "Republican",
+          "ballotDesignation": "Small Business Owner",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Steve_Hilton_%2854233445987_crop%29.jpg/500px-Steve_Hilton_%2854233445987_crop%29.jpg",
+          "summary": "Hilton was a senior adviser to U.K. Prime Minister David Cameron from 2010 to 2012, co-founded a Silicon Valley political crowdfunding platform, and hosted a weekly Fox News program from 2017 to 2023. He is endorsed by President Donald Trump and is campaigning on lowering gas prices, cutting income taxes, and reducing regulation.",
+          "positions": {
+            "economy/taxes": "Would eliminate state income tax on the first $150,000 of earnings with a flat rate above that, halve the gas tax, and eliminate the $800 business registration fee; opposes Proposition 40.",
+            "housing": "Would reduce fees and building rules for smaller single-family 'starter homes,' create a state loan program for first-time buyers, limit CEQA lawsuits against construction, and open more land for suburban development.",
+            "homelessness": "Considers street camping illegal and says police should be involved in clearing encampments; favors funding sober housing over low-barrier shelters.",
+            "public safety/criminal justice": "Would reopen closed state prisons, reduce early release for good conduct, expand prison rehabilitation programs, and reduce restrictions on owning and using firearms.",
+            "environment/energy": "Would roll back greenhouse gas and clean energy mandates, end requirements that utilities buy solar and wind power, and allow more in-state oil and natural gas production.",
+            "immigration": "Would seek to overturn California's sanctuary law limiting police cooperation with federal immigration enforcement.",
+            "education": "Supports phonics instruction, holding back third graders not reading at grade level, easier charter conversions, and public funds for students in underperforming districts to attend private schools; opposes the state law allowing transgender students to choose sports teams.",
+            "healthcare": "Would end state-funded Medi-Cal coverage for undocumented immigrants and redirect the money toward costs for legal residents; favors more insurer competition."
+          }
+        }
+      ]
+    },
+    {
+      "id": "lt-governor",
+      "office": "Lieutenant Governor",
+      "level": "statewide",
+      "description": "The lieutenant governor becomes acting governor when the governor is absent or the office is vacant, presides over the state Senate with a tie-breaking vote, and sits on the UC and CSU governing boards and the State Lands Commission.",
+      "candidates": [
+        {
+          "name": "Fiona Ma",
+          "party": "Democratic",
+          "ballotDesignation": "State Treasurer/CPA",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Fiona_Ma_official2.jpg/500px-Fiona_Ma_official2.jpg",
+          "website": "https://fionama.com",
+          "summary": "Ma is a certified public accountant who has been state treasurer since 2019; she previously served on the Board of Equalization, in the state Assembly, and on the San Francisco Board of Supervisors. She is endorsed by the California Democratic Party and the California Labor Federation.",
+          "positions": {
+            "economy/taxes": "Says government red tape delays housing and discourages investment and that small business permitting should be easier.",
+            "housing": "Cites her record as treasurer financing affordable housing units and expanding down payment assistance for first-time homebuyers.",
+            "education": "Says she would make higher education more affordable, expand paid internships, and strengthen career pathways."
+          }
+        },
+        {
+          "name": "Gloria Romero",
+          "party": "Republican",
+          "ballotDesignation": "Educator/Businesswoman",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gloria_Romero%2C_c._2007.jpg",
+          "website": "https://gloriajromero.com",
+          "summary": "Romero served nearly 12 years in the Legislature as a Democrat, including as state Senate majority leader from 2005 to 2008, the first woman in that role. She registered as a Republican in 2024 and is allied with gubernatorial candidate Steve Hilton.",
+          "positions": {
+            "economy/taxes": "Says the state budget contains excessive bureaucracy and waste and proposes an economic plan aimed at helping businesses.",
+            "education": "Authored school-choice legislation as a senator and says she would restore academic standards; supports Title IX protections for girls' sports.",
+            "environment/energy": "Says she would rein in state commissions she believes have failed to protect water and farmland.",
+            "government reform": "Says the lieutenant governor's office should not be ceremonial and criticizes one-party control of state government."
+          }
+        }
+      ]
+    },
+    {
+      "id": "attorney-general",
+      "office": "Attorney General",
+      "level": "statewide",
+      "description": "The attorney general is California's chief law officer, heading the Department of Justice, representing the state in court, and overseeing district attorneys and sheriffs.",
+      "candidates": [
+        {
+          "name": "Rob Bonta",
+          "party": "Democratic",
+          "ballotDesignation": "California Attorney General",
+          "incumbent": true,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Rob_Bonta_official_portrait_%28cropped%29.jpg/500px-Rob_Bonta_official_portrait_%28cropped%29.jpg",
+          "summary": "Bonta was appointed attorney general in 2021 and elected to a full term in 2022; he previously represented parts of the East Bay in the state Assembly. Since President Trump's 2025 return to office, he has filed or joined more than 50 lawsuits against the administration.",
+          "positions": {
+            "housing": "Has enforced state housing laws requiring cities to approve and plan for new housing, including legal action against cities that did not comply.",
+            "public safety/criminal justice": "Has focused on enforcing criminal justice laws passed by the Legislature in the early 2020s.",
+            "immigration": "Has challenged federal immigration enforcement actions in court as part of the state's litigation against the Trump administration.",
+            "government reform": "Has made litigation against federal policies he considers unlawful a central part of his tenure."
+          }
+        },
+        {
+          "name": "Michael Gates",
+          "party": "Republican",
+          "ballotDesignation": "Deputy United States Attorney",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichaelGates.jpg",
+          "website": "https://gates4ag.com",
+          "summary": "Gates is a former trial attorney who served about a decade as Huntington Beach city attorney, where he challenged state criminal justice and housing policies in court. In 2025 he served as a deputy assistant attorney general in the U.S. Justice Department's Civil Rights Division before returning to Huntington Beach.",
+          "positions": {
+            "public safety/criminal justice": "Says he would fully enforce Proposition 36 (2024) on repeat theft and drug offenses, prosecute fentanyl traffickers, and prioritize victims.",
+            "homelessness": "Says he would help people off the streets and into treatment.",
+            "housing": "As city attorney, contested state housing mandates that would have required Huntington Beach to plan for more affordable housing.",
+            "government reform": "Says taxpayer dollars should be spent honestly and effectively and that public safety should not be treated as a partisan issue."
+          }
+        }
+      ]
+    },
+    {
+      "id": "secretary-of-state",
+      "office": "Secretary of State",
+      "level": "statewide",
+      "description": "The secretary of state is California's chief elections officer, certifying candidates and ballot measures and overseeing vote counting, and also manages business filings, campaign finance disclosures, and the state archives.",
+      "candidates": [
+        {
+          "name": "Shirley N. Weber",
+          "party": "Democratic",
+          "ballotDesignation": "California Secretary of State",
+          "incumbent": true,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Shirley_Weber.jpg/500px-Shirley_Weber.jpg",
+          "website": "https://drshirleyweber.com",
+          "summary": "Weber was appointed secretary of state in 2021, becoming the first Black person to hold the office, and won a full term in 2022 after eight years in the Assembly. Her tenure included the permanent adoption of universal mail-in voting and administration of the 2021 gubernatorial recall election.",
+          "positions": {
+            "elections": "Supports universal vote-by-mail and opposes shorter polling hours or fewer voting days; pledges to expand voting access.",
+            "government reform": "Pledges to improve transparency in election and campaign filings.",
+            "election security": "Pledges to strengthen election cybersecurity protections and says threats against election officials will not be tolerated."
+          }
+        },
+        {
+          "name": "Donald P. (Don) Wagner",
+          "party": "Republican",
+          "ballotDesignation": "Orange County Supervisor",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Donald_P._Wagner%2C_2022.jpg",
+          "website": "https://wagnerforcalifornia.com",
+          "summary": "Wagner is an Orange County supervisor, a former mayor of Irvine, and a former state assemblymember. He is running on an election-integrity platform that includes voter ID, faster ballot counting, and voter-roll maintenance.",
+          "positions": {
+            "elections": "Supports requiring photo ID to vote and says California should count ballots and report results faster.",
+            "election security": "Says voter rolls should be cleaned of people who have moved or died; supported releasing voter information to the U.S. Justice Department.",
+            "government reform": "Says the secretary of state should act as a nonpartisan umpire rather than a partisan official."
+          }
+        }
+      ]
+    },
+    {
+      "id": "treasurer",
+      "office": "Treasurer",
+      "level": "statewide",
+      "description": "The treasurer is the state's banker, investing unspent state funds, managing state borrowing and bond sales, and chairing many state finance boards.",
+      "candidates": [
+        {
+          "name": "Eleni Kounalakis",
+          "party": "Democratic",
+          "ballotDesignation": "Lieutenant Governor of California",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/LG_Kounalakis_Signing_%28cropped%29.jpg/500px-LG_Kounalakis_Signing_%28cropped%29.jpg",
+          "website": "https://eleniforca.com",
+          "summary": "Kounalakis has served two terms as lieutenant governor and was U.S. ambassador to Hungary under President Barack Obama; before public office she worked for nearly two decades in housing development. On the UC Regents and CSU Trustees she has voted against proposed tuition increases.",
+          "positions": {
+            "housing": "Says she would use public finance to build more affordable housing.",
+            "economy/taxes": "Says she would invest in the financial futures of children and families and protect public pensions.",
+            "education": "Has voted against UC and CSU tuition increases and cites support for added college student housing.",
+            "healthcare": "Says she would defend health care and immigrant communities against federal actions."
+          }
+        },
+        {
+          "name": "Jennifer Hawks",
+          "party": "Republican",
+          "ballotDesignation": "Retired Business Executive",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/Untitled-1_20260506_041426_19269.png",
+          "website": "https://hawksforus.com",
+          "summary": "Hawks is a retired Silicon Valley business executive who most recently served on the executive team of Sacred Heart Schools in Atherton and has not held elected office. She is a local Republican Party activist running as an independent check on state finances.",
+          "positions": {
+            "government reform": "Says the treasurer should act as a financial watchdog, demand transparency and measurable results, and expose waste, fraud, and mismanagement.",
+            "economy/taxes": "Says she would advocate responsible investing and put taxpayers first."
+          }
+        }
+      ]
+    },
+    {
+      "id": "controller",
+      "office": "Controller",
+      "level": "statewide",
+      "description": "The controller is California's chief fiscal officer, accounting for and disbursing state funds, auditing state spending, running state payroll, and administering unclaimed property.",
+      "candidates": [
+        {
+          "name": "Malia M. Cohen",
+          "party": "Democratic",
+          "ballotDesignation": "State Controller/Mother",
+          "incumbent": true,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Malia_Cohen_State_Controller_portrait.jpg",
+          "website": "https://maliacohenforca.com",
+          "summary": "Cohen has been state controller since 2023 and previously served on the Board of Equalization and the San Francisco Board of Supervisors. She is campaigning on transparency in state finances, monthly cash reporting, and modernizing the state payroll system.",
+          "positions": {
+            "economy/taxes": "Urged caution in state spending during recent budget negotiations and publishes monthly cash reports.",
+            "government reform": "Has expanded public access to state financial and payroll data and supports modernizing California's payroll system."
+          }
+        },
+        {
+          "name": "Herb W. Morgan",
+          "party": "Republican",
+          "ballotDesignation": "Chief Investment Officer",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/Herb_Morgan_20260402_065151.jpg",
+          "website": "https://herbmorgan.com",
+          "summary": "Morgan founded a San Diego investment firm later acquired by Cantor Fitzgerald Investment Advisors and is a former president of the San Diego City Employees' Retirement System board. He is running on a platform of exposing fraud and increasing transparency in state spending.",
+          "positions": {
+            "government reform": "Would post all state expenditures in an online database with transaction-level detail and near real-time reporting.",
+            "economy/taxes": "Says rigorous pre- and post-audits would direct more resources to classrooms and essential programs."
+          }
+        }
+      ]
+    },
+    {
+      "id": "insurance-commissioner",
+      "office": "Insurance Commissioner",
+      "level": "statewide",
+      "description": "The insurance commissioner heads the Department of Insurance, which licenses and regulates insurers, approves rate changes, and handles consumer complaints in the nation's largest insurance market.",
+      "candidates": [
+        {
+          "name": "Ben Allen",
+          "party": "Democratic",
+          "ballotDesignation": "California State Senator",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ben_Allen%2C_2021.jpg/500px-Ben_Allen%2C_2021.jpg",
+          "website": "https://benallenca.com",
+          "summary": "Allen has been a state senator since 2014, representing a Los Angeles-area district, and authored laws on single-use plastics and the 2024 Proposition 4 climate bond. After the 2025 Los Angeles County fires he authored bills on claim payments and wildfire-resilience loans; he says he does not accept insurance company contributions.",
+          "positions": {
+            "insurance availability": "Favors increasing insurer competition and home and community wildfire mitigation rather than a new large-scale state-run insurance system.",
+            "consumer protection": "Would require insurers to report claim delays in real time and explain denials, add complaint staff, and appoint a consumer advocate in the department.",
+            "environment/energy": "Supports holding the fossil fuel industry accountable for its role in climate change and wildfire risk.",
+            "housing": "Would involve state and local officials, firefighters, and builders in steering development away from high fire-risk areas.",
+            "FAIR Plan": "Would increase oversight of the FAIR Plan, the state's insurer of last resort."
+          }
+        },
+        {
+          "name": "Jane Kim",
+          "party": "Democratic",
+          "ballotDesignation": "Attorney/Consumer Advocate",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SupervisorJaneKim.png/500px-SupervisorJaneKim.png",
+          "website": "https://janekim.org",
+          "summary": "Kim is a civil rights attorney and former San Francisco supervisor who led efforts on free community college for city residents and a $15 local minimum wage. She says she does not accept insurance company or corporate PAC money and is endorsed by Sen. Bernie Sanders and the California Teachers Association.",
+          "positions": {
+            "insurance availability": "Proposes 'Natural Disaster Insurance for All,' a state-run authority funded by premiums that would guarantee wildfire and flood coverage; would tie insurers' ability to sell auto insurance to offering home insurance.",
+            "consumer protection": "Would cap excessive profits, freeze rates when a policyholder files a claim, penalize claim delays, and publish a public dashboard of insurers' claims records.",
+            "auto insurance": "Would expand the state's low-cost auto insurance program to more drivers.",
+            "environment/energy": "Says insurers should disclose whether policyholder premiums support the fossil fuel industry.",
+            "healthcare": "Says she would advocate for guaranteed health coverage for every California child."
+          }
+        }
+      ]
+    },
+    {
+      "id": "superintendent",
+      "office": "Superintendent of Public Instruction",
+      "level": "statewide",
+      "description": "The nonpartisan superintendent is the state's elected education official and advocate for public schools; under a new law, many of the office's administrative duties shift in 2027 to a governor-appointed education commissioner and the State Board of Education.",
+      "candidates": [
+        {
+          "name": "Richard Barrera",
+          "party": "",
+          "ballotDesignation": "State Superintendent Advisor",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RichardBarrera2026_2026-04-30_134234.jpeg",
+          "website": "https://barreraforedu.com",
+          "summary": "Barrera has served 18 years on the San Diego Unified School Board and is its current president. He is endorsed by the California Teachers Association and the California Democratic Party and describes himself as a Democrat.",
+          "positions": {
+            "education": "Says he would bring San Diego Unified's reading and math reforms statewide and focus on school funding, early childhood education, and easing the path to becoming a teacher.",
+            "immigration": "Supports keeping federal immigration agents out of schools.",
+            "healthcare": "Supports school vaccination requirements for measles and other diseases.",
+            "school facilities": "Led local bond campaigns to repair aging schools and add safety features such as electronic door locks."
+          }
+        },
+        {
+          "name": "Sonja Shaw",
+          "party": "",
+          "ballotDesignation": "School District President",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sonja_Shaw_20260417_055442.jpg",
+          "website": "https://shawforca.com",
+          "summary": "Shaw is president of the Chino Valley Unified School Board, which under her leadership adopted policies on parental notification and transgender students that drew legal challenges from the state. She says she would refocus schools on reading, writing, and math and cut bureaucracy.",
+          "positions": {
+            "education": "Would restore higher academic standards in reading, writing, and math and direct more funding to classrooms.",
+            "gender policy": "Supports limiting girls' sports and locker rooms to students designated female at birth, citing Title IX.",
+            "parental rights": "Supports policies requiring schools to inform parents about issues involving their children, including gender identity.",
+            "government reform": "Would cut education bureaucracy and require fiscal transparency on school spending."
+          }
+        }
+      ]
+    },
+    {
+      "id": "boe-1",
+      "office": "Board of Equalization, District 1",
+      "level": "boe",
+      "boeDistrict": 1,
+      "description": "The Board of Equalization oversees county property tax assessment practices, sets taxable values for utility and railroad property, and administers alcohol and insurer taxes; District 1 covers Northern California, the Central Valley, and the eastern desert counties.",
+      "candidates": [
+        {
+          "name": "Nelson Esparza",
+          "party": "Democratic",
+          "ballotDesignation": "Teacher/Economist/Councilmember",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Fresno_City_Councilmember_Nelson_Esparza_Portrait.jpg/500px-Fresno_City_Councilmember_Nelson_Esparza_Portrait.jpg",
+          "website": "https://nelsonesparza.com",
+          "summary": "Esparza is a Fresno City Council member who chairs its Finance and Audit Committee and has worked as an educator and economist. He says he would close tax loopholes, pursue tax evaders, and oppose new taxes on middle- and working-class families.",
+          "positions": {
+            "economy/taxes": "Would close tax loopholes and pursue tax evaders; opposes new taxes on middle-class families and small businesses.",
+            "government reform": "Supports more transparency in the tax system and fair, impartial property tax assessments."
+          }
+        },
+        {
+          "name": "Shannon Grove",
+          "party": "Republican",
+          "ballotDesignation": "State Senator/Businesswoman",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Shannon_Grove%2C_2019_%28cropped%29.jpg/500px-Shannon_Grove%2C_2019_%28cropped%29.jpg",
+          "website": "https://shannongroveca.com",
+          "summary": "Grove is a state senator from Kern County and an Army veteran who founded a staffing business; she previously served as Senate Republican leader. She says she would act as a taxpayer watchdog on the board and defend Proposition 13.",
+          "positions": {
+            "economy/taxes": "Says she would work to prevent over-taxation of homes, businesses, and property and defend Proposition 13.",
+            "housing": "Cites her legislative work for first-time homebuyers.",
+            "public safety/criminal justice": "Says she worked in the Legislature to hold sex offenders who harm children accountable."
+          }
+        }
+      ]
+    },
+    {
+      "id": "boe-2",
+      "office": "Board of Equalization, District 2",
+      "level": "boe",
+      "boeDistrict": 2,
+      "description": "The Board of Equalization oversees county property tax assessment practices, sets taxable values for utility and railroad property, and administers alcohol and insurer taxes; District 2 covers the Bay Area and Central Coast.",
+      "candidates": [
+        {
+          "name": "Sally J. Lieber",
+          "party": "Democratic",
+          "ballotDesignation": "Incumbent",
+          "incumbent": true,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sally_Lieber_Square.jpg/500px-Sally_Lieber_Square.jpg",
+          "website": "https://sallylieber.org",
+          "summary": "Lieber is the board's current chair and a former state assemblymember. She says she has expanded access to property tax relief for veterans and low-income families and does not accept corporate PAC contributions.",
+          "positions": {
+            "economy/taxes": "Supports accurate and equitable property tax assessments and says wealthy interests should pay what they owe; has pledged to uphold Proposition 13.",
+            "housing": "Supports policies for housing affordability and rapid disaster recovery.",
+            "consumer protection": "Cites work on identity-theft protections for property owners and homeowners' insurance consumer protections."
+          }
+        },
+        {
+          "name": "John Pimentel",
+          "party": "Democratic",
+          "ballotDesignation": "Member, Board of Trustees, San Mateo County Community College District",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnPimentel2026_2026-05-01_133945.png",
+          "website": "https://johnpimentel.com",
+          "summary": "Pimentel is a San Mateo County Community College District trustee, a former state deputy secretary for transportation, and a clean-energy entrepreneur. He says the board has granted utilities favorable tax treatment and pledges to reform it.",
+          "positions": {
+            "economy/taxes": "Would seek to end sales tax on restaurant and delivered food and close loopholes used by wealthy individuals and corporations.",
+            "government reform": "Says the board should be reformed to prevent corruption and stop favorable assessments for utilities."
+          }
+        }
+      ]
+    },
+    {
+      "id": "boe-3",
+      "office": "Board of Equalization, District 3",
+      "level": "boe",
+      "boeDistrict": 3,
+      "description": "The Board of Equalization oversees county property tax assessment practices, sets taxable values for utility and railroad property, and administers alcohol and insurer taxes; District 3 covers most of Los Angeles County.",
+      "candidates": [
+        {
+          "name": "Mike Gipson",
+          "party": "Democratic",
+          "ballotDesignation": "State Assemblymember/Father",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Mike_Gipson_assembly_portrait.jpg",
+          "website": "https://mikegipson.net",
+          "summary": "Gipson is a state assemblymember from the Carson and Compton area who chairs the Assembly Revenue and Taxation Committee; he previously worked as a police officer, a union staffer, and chief of staff to a former Board of Equalization chair. He is endorsed by the California Democratic Party and the California Labor Federation.",
+          "positions": {
+            "economy/taxes": "Says he would close loopholes used by wealthy individuals and corporations and that middle-class taxpayers are taxed too heavily.",
+            "immigration": "Supported legislation keeping federal immigration agents out of schools."
+          }
+        },
+        {
+          "name": "Samuel P. Sukaton",
+          "party": "Democratic",
+          "ballotDesignation": "Labor Union Organizer",
+          "incumbent": false,
+          "photoUrl": null,
+          "summary": "Sukaton is a labor union organizer and policy advocate who was a regional campaign director for Bernie Sanders' 2020 presidential campaign in the Inland Empire and Orange County. He did not submit a statement for the official voter guide; he is endorsed by California Environmental Voters and Americans for Democratic Action Southern California.",
+          "positions": {}
+        }
+      ]
+    },
+    {
+      "id": "boe-4",
+      "office": "Board of Equalization, District 4",
+      "level": "boe",
+      "boeDistrict": 4,
+      "description": "The Board of Equalization oversees county property tax assessment practices, sets taxable values for utility and railroad property, and administers alcohol and insurer taxes; District 4 covers Southern California outside most of Los Angeles County, including Orange, San Diego, Riverside, and Imperial counties.",
+      "candidates": [
+        {
+          "name": "Tom Umberg",
+          "party": "Democratic",
+          "ballotDesignation": "Small Businessman/Senator",
+          "incumbent": false,
+          "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tom_Umberg_CA_Senate_official_photo.jpg/500px-Tom_Umberg_CA_Senate_official_photo.jpg",
+          "summary": "Umberg is a state senator from Orange County, a former federal prosecutor, and a former Army JAG officer. He is endorsed by the California Democratic Party and Sens. Adam Schiff and Alex Padilla and says he authored this year's Proposition 4 on public campaign financing.",
+          "positions": {
+            "economy/taxes": "Says he would make the tax system fairer for homeowners, renters, and small businesses and ensure large corporations pay their share.",
+            "government reform": "Authored the legislation behind Proposition 4, which would allow public financing of campaigns.",
+            "immigration": "Backed legislation seeking accountability from federal immigration enforcement."
+          }
+        },
+        {
+          "name": "Denis Bilodeau",
+          "party": "Republican",
+          "ballotDesignation": "Councilmember/Civil Engineer",
+          "incumbent": false,
+          "photoUrl": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Denis_Bilodeau.jpg",
+          "summary": "Bilodeau is a licensed civil and traffic engineer, mayor pro tem of the City of Orange, and president of the Orange County Water District board. He is endorsed by the Howard Jarvis Taxpayers Association and says he would focus on utility property assessments that affect ratepayers.",
+          "positions": {
+            "economy/taxes": "Signed the Howard Jarvis Taxpayers Association pledge to protect Proposition 13 and opposes a proposed vehicle mileage tax.",
+            "utility costs": "Says accurate assessment of utility property can help keep electric, gas, and water bills down.",
+            "environment/energy": "Cites work at the water district on affordable water rates and protecting groundwater from 'forever chemicals' (PFAS)."
+          }
+        }
+      ]
+    }
+  ],
+  "propositions": [
+    {
+      "number": "1",
+      "title": "Authorizes Bonds for Housing Affordability Programs. Legislative Statute.",
+      "summary": "Authorizes $11.25 billion in state general obligation bonds for affordable rental housing, veterans' home loans, supportive housing, preservation of existing affordable housing, and down payment assistance. A YES vote allows the state to borrow the money; a NO vote does not.",
+      "yesMeans": "The state could borrow $11.25 billion to support veterans and affordable housing.",
+      "noMeans": "The state could not borrow $11.25 billion to support veterans and affordable housing.",
+      "supporters": ["US Vets", "California Federation of Teachers", "Habitat for Humanity California", "Self-Help for the Elderly", "California Alliance of Child and Family Services"],
+      "opponents": [],
+      "fiscalImpact": "Increased state cost of $500 million to $600 million annually for about 25 years to repay the bond."
+    },
+    {
+      "number": "2",
+      "title": "Increases State's Rainy Day Fund. Legislative Constitutional Amendment.",
+      "summary": "Raises the cap on the state's Rainy Day Fund (from 10% to 20% of General Fund revenue) and changes rules for building reserves and paying down debts. A YES vote leads to higher state budget reserves and extends required extra debt payments; a NO vote keeps current rules.",
+      "yesMeans": "Rules for building state budget reserves and paying down extra state debts would change, resulting in higher reserves and extra debt payments for longer.",
+      "noMeans": "Rules for building state budget reserves and paying down extra state debts would not change.",
+      "supporters": ["California Professional Firefighters", "Los Angeles Area Chamber of Commerce", "Gov. Gavin Newsom", "Xavier Becerra", "Assemblymember Jesse Gabriel"],
+      "opponents": ["Assemblymember David Tangipa"],
+      "fiscalImpact": "State budget reserves would be higher."
+    },
+    {
+      "number": "3",
+      "title": "Provides Permanent Funding for Schools and Health Care by Extending Existing Tax on High Incomes. Initiative Constitutional Amendment.",
+      "summary": "Makes permanent the higher income tax rates on high earners (currently individuals earning over about $371,000) first approved in 2012 and scheduled to expire in 2031, with revenue directed to public education and health care. A YES vote makes the rates permanent; a NO vote lets them expire in 2031.",
+      "yesMeans": "An income tax increase on high-income earners in place since 2012 would become permanent instead of expiring in 2031.",
+      "noMeans": "An income tax increase on high-income earners in place since 2012 would expire in 2031.",
+      "supporters": ["California Teachers Association", "California School Nurses Organization", "California State PTA", "Planned Parenthood Affiliates of California"],
+      "opponents": ["California Taxpayers Association", "Family Business Association of California", "California Hispanic Chambers of Commerce"],
+      "fiscalImpact": "Maintains $5 billion to $15 billion of annual state income tax revenue that would otherwise end after 2031."
+    },
+    {
+      "number": "4",
+      "title": "Repeals Prohibition Against Public Funding of Election Campaigns. Legislative Statute.",
+      "summary": "Repeals the 1988 ban on public financing of political campaigns, allowing state and local governments to create programs that give candidates public funds, but not from money earmarked for education, transportation, or public safety. A YES vote allows such programs; a NO vote keeps the ban for the state and most local governments.",
+      "yesMeans": "State and local governments could create public campaign financing programs for candidates, subject to limits on funding sources, uses, and recipients.",
+      "noMeans": "State and most local governments would remain unable to create public campaign finance programs.",
+      "supporters": ["League of Women Voters of California", "California Nurses Association", "Consumer Watchdog", "Social Security Works"],
+      "opponents": ["California Taxpayers Association", "Howard Jarvis Taxpayers Association", "Family Business Association of California", "United Latinos Action"],
+      "fiscalImpact": "Ongoing state costs of a few hundred thousand dollars per year for the Fair Political Practices Commission to advise governments on public financing programs."
+    },
+    {
+      "number": "5",
+      "title": "Changes Recall Election Process for Statewide Officers. Legislative Constitutional Amendment.",
+      "summary": "Removes the replacement-candidate question from recall elections of state officers; a recalled office would instead be filled by a later special election or appointment, and a recalled governor would be succeeded by the lieutenant governor in most cases. A YES vote makes this change; a NO vote keeps the current two-question recall ballot.",
+      "yesMeans": "Recall elections would no longer include a question about who should fill the vacancy; vacancies would be filled through special elections or appointments.",
+      "noMeans": "Voters would continue to choose a replacement as part of recall elections.",
+      "supporters": ["Secretary of State Shirley Weber (proposed the change)", "State Sen. Josh Newman (author)"],
+      "opponents": ["California Republican Party", "Election Integrity Project California"],
+      "fiscalImpact": "Net fiscal effect unknown; in the event of a recall, savings or costs of millions of dollars depending on the office recalled."
+    },
+    {
+      "number": "37",
+      "title": "Creates Loan Program for Middle-Income Buyers of Qualified New Homes. Initiative Statute.",
+      "summary": "Authorizes the California Housing Finance Agency to sell up to $25 billion in revenue bonds to fund second mortgages covering up to 17% of the price of newly built homes under about $1.5 million for income-eligible owner-occupants who put at least 3% down. A YES vote creates the program, with bonds repaid by borrowers' loan payments; a NO vote does not.",
+      "yesMeans": "The state would create a new homebuying assistance program funded by up to $25 billion in revenue bonds repaid by homeowners' loan payments.",
+      "noMeans": "The state would not be required to create the new homebuying assistance program.",
+      "supporters": ["United Nurses Associations of California", "California Conference of Carpenters", "State Treasurer Fiona Ma"],
+      "opponents": [],
+      "fiscalImpact": "No direct state or local costs."
+    },
+    {
+      "number": "38",
+      "title": "Authorizes Bonds for Immunology Medical Research. Initiative Statute.",
+      "summary": "Authorizes $8.4 billion in state general obligation bonds for immunology and immunotherapy research, half to a single University of California-affiliated nonprofit research institute and half to research grants. A YES vote allows the borrowing; a NO vote does not.",
+      "yesMeans": "The state could borrow $8.4 billion to support immunology and immunotherapy research by California institutes and universities.",
+      "noMeans": "The state could not borrow $8.4 billion for this research.",
+      "supporters": ["Michael J. Fox Foundation", "Alzheimer's Los Angeles", "Kidney Cancer Association", "American Nurses Association California"],
+      "opponents": ["Robert M. Kaplan, Ph.D."],
+      "fiscalImpact": "Increased state cost of $500 million to $600 million annually for about 20 years to repay the bond, potentially offset in part by revenue from funded research."
+    },
+    {
+      "number": "39",
+      "title": "Prohibits Citizens from Voting Unless They Present Government-Issued Identification. Initiative Constitutional Amendment.",
+      "summary": "Requires in-person voters to show government-issued ID and mail voters to write the last four digits of a government ID number on their ballot envelope, provides free voter ID cards on request, and adds voter-list maintenance and reporting requirements. A YES vote adds these ID requirements; a NO vote keeps signature-based identity verification.",
+      "yesMeans": "Voters would be required to present additional identifying information to elections officials each time they vote.",
+      "noMeans": "A voter's identity would continue to be established with the voter's signature.",
+      "supporters": ["The Transparency Foundation", "Howard Jarvis Taxpayers Association", "Latino American Political Association", "California Women's Leadership Association"],
+      "opponents": ["ACLU California Action", "California Common Cause", "League of Women Voters of California"],
+      "fiscalImpact": "Costs of tens of millions to low hundreds of millions of dollars each year to implement the new voting requirements."
+    },
+    {
+      "number": "40",
+      "title": "Imposes One-Time Tax on Certain Taxpayers. Initiative Constitutional Amendment and Statute.",
+      "summary": "Imposes a one-time 5% tax on the net worth of California residents with more than $1 billion in assets, with revenue directed mainly to health care and the rest to food assistance and education. A YES vote imposes the tax; a NO vote does not. If Proposition 41 or 42 passes with more votes, Proposition 40 could be nullified.",
+      "yesMeans": "The state would collect a one-time tax from billionaires equal to 5 percent of their wealth.",
+      "noMeans": "The state would not collect a one-time tax from billionaires.",
+      "supporters": ["SEIU United Healthcare Workers West (sponsor)", "U.S. Sen. Bernie Sanders"],
+      "opponents": ["California Primary Care Association", "California School Boards Association", "California Taxpayers Association", "Xavier Becerra", "Steve Hilton"],
+      "fiscalImpact": "Temporary revenue increase of tens of billions of dollars over several years, with a possible ongoing decrease of less than $1 billion per year in income tax revenue from billionaires."
+    },
+    {
+      "number": "41",
+      "title": "Prohibits New State Taxes That Exclude Revenues from State Spending Limit. Requires Audits for New State Special Taxes. Initiative Constitutional Amendment.",
+      "summary": "Nullifies state taxes enacted after January 1, 2026 that exempt their revenue from the state's constitutional spending limit, and requires the State Auditor to review programs funded by new special taxes before an initiative reaches the ballot and periodically afterward. A YES vote adds these limits and audits; a NO vote keeps current rules. It is designed in part to counter Proposition 40.",
+      "yesMeans": "The State Auditor would review programs funded by proposed and approved special taxes, and the state might not be able to exclude new special tax revenue from its spending limit.",
+      "noMeans": "The State Auditor's responsibilities and the state spending limit requirements would not change.",
+      "supporters": ["California Society of CPAs", "CalAsian Chamber of Commerce", "California Taxpayers Association"],
+      "opponents": ["SEIU United Healthcare Workers West", "U.S. Sen. Bernie Sanders"],
+      "fiscalImpact": "Net fiscal effect unknown; depends on future decisions by voters, the Legislature, and other policymakers."
+    },
+    {
+      "number": "42",
+      "title": "Prohibits New State Personal Property Taxes and Certain Retroactive State Taxes. Initiative Constitutional Amendment.",
+      "summary": "Prohibits new state taxes on ownership of personal property (anything other than real estate, such as financial assets) and new taxes applied retroactively based on past activity, and nullifies conflicting taxes enacted after January 1, 2026. A YES vote adds this prohibition; a NO vote leaves the state able to enact such taxes. It is designed in part to counter Proposition 40.",
+      "yesMeans": "The state could not establish new taxes on the ownership of financial assets or other personal property.",
+      "noMeans": "The state would continue to have the option to establish new taxes on the ownership of financial assets or other personal property.",
+      "supporters": ["California Professional Firefighters", "State Building and Construction Trades Council of California", "AMVETS Department of California"],
+      "opponents": ["SEIU United Healthcare Workers West", "U.S. Sen. Bernie Sanders"],
+      "fiscalImpact": "Possibility that state tax revenues will not grow as much in the future."
+    },
+    {
+      "number": "43",
+      "title": "Limits Voters' Ability to Raise Revenues for Local Government Services. Legislative Constitutional Amendment.",
+      "summary": "Raises the vote needed to pass citizen-proposed local special taxes from a simple majority to two-thirds, starting January 1, 2027; it was placed on the ballot by the Legislature as a compromise with the Howard Jarvis Taxpayers Association. A YES vote requires two-thirds approval for these taxes; a NO vote keeps majority approval.",
+      "yesMeans": "Certain local government taxes proposed by voters would require two-thirds voter approval.",
+      "noMeans": "Certain local government taxes could continue to be approved by a majority of voters.",
+      "supporters": ["California Taxpayers Association", "Family Business Association of California", "California Hispanic Chambers of Commerce"],
+      "opponents": ["California Professional Firefighters", "California Federation of Teachers", "SEIU California Nurse Alliance"],
+      "fiscalImpact": "Possibility that local government tax revenues will not grow as much in the future due to the higher vote threshold."
+    },
+    {
+      "number": "44",
+      "title": "Requires Community Health Clinics Spend 90% of Revenue on Program Services. Initiative Statute.",
+      "summary": "Requires nonprofit Federally Qualified Health Centers (community clinics serving underserved areas) to spend at least 90% of annual revenue on program services such as patient care, with penalties for clinics that do not. A YES vote imposes the requirement; a NO vote does not.",
+      "yesMeans": "Certain private nonprofit health clinics would have to spend at least 90 percent of their revenue each year on providing health care services.",
+      "noMeans": "The new requirement on clinic spending would not take effect.",
+      "supporters": ["SEIU United Healthcare Workers West (sponsor)"],
+      "opponents": ["American Academy of Pediatrics California", "California School Nurses Organization", "California Academy of Family Physicians", "California Medical Association"],
+      "fiscalImpact": "Increased state costs in the low tens of millions of dollars per year, covered by fees."
+    },
+    {
+      "number": "45",
+      "title": "Modifies Environmental Review for Certain Projects. Initiative Statute.",
+      "summary": "Amends the California Environmental Quality Act (CEQA) to set deadlines for environmental review and for resolving lawsuits on many housing, transportation, water, health, and clean energy projects, and narrows what courts can consider in such challenges. A YES vote applies the faster procedures; a NO vote keeps existing review and litigation rules.",
+      "yesMeans": "Certain public and private projects would be eligible for faster review and narrower court-challenge procedures.",
+      "noMeans": "Projects would continue to use existing environmental review and court challenge procedures.",
+      "supporters": ["California Children's Hospital Association", "California Water Association", "California Council for Affordable Housing"],
+      "opponents": ["Coalition for Clean Air", "California Environmental Voters", "Physicians for Social Responsibility Los Angeles", "National Wildlife Federation"],
+      "fiscalImpact": "Initial state and local costs likely in the high tens of millions of dollars and potentially over $100 million annually, partly covered by fees, with uncertain longer-term effects."
+    }
+  ]
+}

@@ -1,0 +1,2129 @@
+{
+  "sources": [
+    "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California",
+    "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California_(districts_1%E2%80%9326)",
+    "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_California_(districts_27%E2%80%9352)",
+    "https://en.wikipedia.org/wiki/2026_California_State_Senate_election",
+    "https://en.wikipedia.org/wiki/2026_California_State_Assembly_election",
+    "https://elections.cdn.sos.ca.gov/sov/2026-primary/sov/complete-sov.pdf"
+  ],
+  "generated": "2026-11-01T00:55:33.314Z",
+  "congress": {
+    "1": [
+      {
+        "name": "James Gallagher",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/James_Gallagher%2C_official_portrait_%28119th_Congress%29.jpg/330px-James_Gallagher%2C_official_portrait_%28119th_Congress%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Mike McGuire",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/State_Senator_Mike_McGuire.jpg/330px-State_Senator_Mike_McGuire.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "2": [
+      {
+        "name": "Jared Huffman",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Jared_Huffman_Portrait_118.jpg/330px-Jared_Huffman_Portrait_118.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Robin Littau",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "3": [
+      {
+        "name": "Ami Bera",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Ami_Bera_117th_Congress.jpeg/330px-Ami_Bera_117th_Congress.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Robb Tucker",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "4": [
+      {
+        "name": "Eric Jones",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Mike Thompson",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Mike_Thompson%2C_official_portrait%2C_116th_Congress_%283x4_cropped%29.jpg/330px-Mike_Thompson%2C_official_portrait%2C_116th_Congress_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "5": [
+      {
+        "name": "Michael Masuda",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Tom McClintock",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Tom_McClintock_portrait_%28118th_Congress%29.jpg/330px-Tom_McClintock_portrait_%28118th_Congress%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "6": [
+      {
+        "name": "Kevin Kiley",
+        "party": "No Party Preference",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rep._Kevin_Kiley_official_photo%2C_118th_Congress_2.jpg/330px-Rep._Kevin_Kiley_official_photo%2C_118th_Congress_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Richard Pan",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Richard_Pan_2010.jpg/330px-Richard_Pan_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "7": [
+      {
+        "name": "Doris Matsui",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Doris_Matsui_portrait_%28118th_Congress%29.jpg/330px-Doris_Matsui_portrait_%28118th_Congress%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Mai Vang",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Sacramento_City_Councilmember_Mai_Vang.jpg/330px-Sacramento_City_Councilmember_Mai_Vang.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "8": [
+      {
+        "name": "John Garamendi",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/John_Garamendi_portrait_%28118th_Congress%29.jpg/330px-John_Garamendi_portrait_%28118th_Congress%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Rudy Recile",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "9": [
+      {
+        "name": "Josh Harder",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Josh_Harder%2C_official_portrait%2C_116th_Congress_%283x4_cropped%29.jpg/330px-Josh_Harder%2C_official_portrait%2C_116th_Congress_%283x4_cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "John McBride",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "10": [
+      {
+        "name": "Mark DeSaulnier",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Mark_DeSaulnier-1.jpeg/330px-Mark_DeSaulnier-1.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Jeff Frese",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "11": [
+      {
+        "name": "Connie Chan",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Connie_Chan%2C_2025.jpg/330px-Connie_Chan%2C_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Scott Wiener",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Scott_Wiener_Official_Biography_Portrait.jpg/330px-Scott_Wiener_Official_Biography_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "12": [
+      {
+        "name": "Jamie Joyce",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Lateefah Simon",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Rep._Lateefah_Simon_Official_Portrait.jpg/330px-Rep._Lateefah_Simon_Official_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "13": [
+      {
+        "name": "Adam Gray",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Adam_Gray%2C_official_portrait_%28119th_Congress%29.jpg/330px-Adam_Gray%2C_official_portrait_%28119th_Congress%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Kevin Lincoln",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/KevinLincoln.jpg/330px-KevinLincoln.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "14": [
+      {
+        "name": "Melissa Hernandez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Aisha Wahab",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Aisha_Wahab%2C_official_portrait_-_2026.jpg/330px-Aisha_Wahab%2C_official_portrait_-_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "15": [
+      {
+        "name": "Charles Hoelter",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Kevin Mullin",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Rep._Kevin_Mullin_official_portrait%2C_118th_Congress_%281%29.jpg/330px-Rep._Kevin_Mullin_official_portrait%2C_118th_Congress_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "16": [
+      {
+        "name": "Sam Liccardo",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Liccardo_Sam_119th_Congress_%28cropped%29.jpg/330px-Liccardo_Sam_119th_Congress_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Peter Soulé",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "17": [
+      {
+        "name": "Ro Khanna",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Ro_Khanna%2C_official_portrait%2C_115th_Congress_%283x4%29.jpg/330px-Ro_Khanna%2C_official_portrait%2C_115th_Congress_%283x4%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Ritesh Tandon",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "18": [
+      {
+        "name": "Shane Lewis",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Zoe Lofgren",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Zoe_Lofgren_Official_Portrait_2024.jpeg/330px-Zoe_Lofgren_Official_Portrait_2024.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "19": [
+      {
+        "name": "Jimmy Panetta",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Jimmy_Panetta_official_portrait_%28cropped%29_2.jpg/330px-Jimmy_Panetta_official_portrait_%28cropped%29_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Peter Coe Verbica",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "20": [
+      {
+        "name": "Vince Fong",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Vince_Fong_official_congressional_photograph_118th_congress.jpg/330px-Vince_Fong_official_congressional_photograph_118th_congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Sandra Van Scotter",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "21": [
+      {
+        "name": "Jim Costa",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Rep_Costa_Headshot_2_%28cropped%29.jpg/330px-Rep_Costa_Headshot_2_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Kyle Kirkland",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "22": [
+      {
+        "name": "David Valadao",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/David_Valadao_117th_U.S_Congress.jpg/330px-David_Valadao_117th_U.S_Congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Randy Villegas",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "23": [
+      {
+        "name": "Tessa Lynn Hodge",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Jay Obernolte",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Jay_Obernolte_119th_Congress.jpg/330px-Jay_Obernolte_119th_Congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "24": [
+      {
+        "name": "Salud Carbajal",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Salud_Carbajal_-_117th_Congress.jpg/330px-Salud_Carbajal_-_117th_Congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Bob Smith",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "25": [
+      {
+        "name": "Joe Males",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Raul Ruiz",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Raul_Ruiz_%28D-CA%29_118th_Congress_1.jpg/330px-Raul_Ruiz_%28D-CA%29_118th_Congress_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "26": [
+      {
+        "name": "Sam Gallucci",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Jacqui Irwin",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Jacqui_Irwin_%28cropped%29_150302-Z-WQ610-_%2816698067641%29.jpg/330px-Jacqui_Irwin_%28cropped%29_150302-Z-WQ610-_%2816698067641%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "27": [
+      {
+        "name": "Jason Gibbs",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "George Whitesides",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/George_T._Whitesides%2C_official_portrait_%28119th_Congress%29_%281%29.jpg/330px-George_T._Whitesides%2C_official_portrait_%28119th_Congress%29_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "28": [
+      {
+        "name": "Judy Chu",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Judy_Chu_2019-05-02.jpg/330px-Judy_Chu_2019-05-02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "April Verlato",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "29": [
+      {
+        "name": "Angelica Dueñas",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Luz Rivas",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Rep._Luz_Rivas_%28D-CA%29%2C_Official_Portrait%2C_119th_Congress.jpg/330px-Rep._Luz_Rivas_%28D-CA%29%2C_Official_Portrait%2C_119th_Congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "30": [
+      {
+        "name": "Laura Friedman",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Laura_Friedman%2C_House_portrait.jpg/330px-Laura_Friedman%2C_House_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Scott Meyers",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "31": [
+      {
+        "name": "Eric Ching",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Gil Cisneros",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Gil_Cisneros_119th_Congress_2.jpg/330px-Gil_Cisneros_119th_Congress_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "32": [
+      {
+        "name": "Brad Sherman",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Brad_Sherman_portrait_%28118th_Congress%29.jpg/330px-Brad_Sherman_portrait_%28118th_Congress%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Larry Thompson",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Larry_A._Thompson%2C_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      }
+    ],
+    "33": [
+      {
+        "name": "Pete Aguilar",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Pete_Aguilar_117th_congress.jpeg/330px-Pete_Aguilar_117th_congress.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Stephanie Vargas",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "34": [
+      {
+        "name": "Jimmy Gomez",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Jimmy_Gomez_official_portrait_%28light_crop%29.jpg/330px-Jimmy_Gomez_official_portrait_%28light_crop%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Angela Gonzales-Torres",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "35": [
+      {
+        "name": "Mike Cargile",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Norma Torres",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Norma_Torres_118th_congress.jpeg/330px-Norma_Torres_118th_congress.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "36": [
+      {
+        "name": "Houston Brignano",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Ted Lieu",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Congressman_Ted_W._Lieu_Official_Photo.jpg/330px-Congressman_Ted_W._Lieu_Official_Photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "37": [
+      {
+        "name": "Sydney Kamlager-Dove",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Sydney_Kamlager-Dove_118th-2.jpeg/330px-Sydney_Kamlager-Dove_118th-2.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Samantha Mota",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "38": [
+      {
+        "name": "Pedro Casas",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Hilda Solis",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Hilda_Solis%2C_2025.jpg/330px-Hilda_Solis%2C_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "39": [
+      {
+        "name": "Steve Manos",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Mark Takano",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Mark_Takano_118th_Congress.jpeg/330px-Mark_Takano_118th_Congress.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "40": [
+      {
+        "name": "Ken Calvert",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Ken_Calvert.jpg/330px-Ken_Calvert.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Young Kim",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Young_Kim_117th_U.S_Congress.jpg/330px-Young_Kim_117th_U.S_Congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "41": [
+      {
+        "name": "Mitch Clemmons",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Linda Sánchez",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Linda_S%C3%A1nchez%2C_116th_Congress%2C_official_photo.jpg/330px-Linda_S%C3%A1nchez%2C_116th_Congress%2C_official_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "42": [
+      {
+        "name": "Brian Burley",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Robert Garcia",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Robert_Garcia_119th_Congress.jpeg/330px-Robert_Garcia_119th_Congress.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "43": [
+      {
+        "name": "Cristian Morales",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Maxine Waters",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Maxine_Waters%2C_Official_Portrait%2C_113th_Congress_%28cropped%29.jpg/330px-Maxine_Waters%2C_Official_Portrait%2C_113th_Congress_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "44": [
+      {
+        "name": "Genevieve Angel",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Nanette Barragán",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Nanette_Barragan_official_portrait.jpg/330px-Nanette_Barragan_official_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "45": [
+      {
+        "name": "Derek Tran",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Rep._Derek_Tran_Official_Portrait.jpg/330px-Rep._Derek_Tran_Official_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Chuong Vo",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "46": [
+      {
+        "name": "Lou Correa",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Lou_Correa_118th_Congress_%28mid-cropped%29.jpg/330px-Lou_Correa_118th_Congress_%28mid-cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "David Pan",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "47": [
+      {
+        "name": "Jenny Le Roux",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Dave Min",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Rep._Dave_Min_Official_Portrait.jpg/330px-Rep._Dave_Min_Official_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "48": [
+      {
+        "name": "Jim Desmond",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Jim_Desmond_Official_Portrait.jpg/330px-Jim_Desmond_Official_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Marni von Wilpert",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Marni_von_Wilpert.jpg/330px-Marni_von_Wilpert.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "49": [
+      {
+        "name": "Armen Kurdian",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Mike Levin",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Rep._Mike_Levin_official_photo.jpg/330px-Rep._Mike_Levin_official_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "50": [
+      {
+        "name": "Steve Cohen",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Scott Peters",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Scott_Peters_official_portrait_116th_Congress.jpg/330px-Scott_Peters_official_portrait_116th_Congress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "51": [
+      {
+        "name": "Ricardo Cabrera",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Sara Jacobs",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Representative_Sara_Jacobs_full_portrait.jpg/330px-Representative_Sara_Jacobs_full_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "52": [
+      {
+        "name": "Jeff Belle",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Juan Vargas",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Juan_Vargas_official_photo.jpg/330px-Juan_Vargas_official_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "_verify": []
+  },
+  "senate": {
+    "2": [
+      {
+        "name": "Damon Connolly",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Assemblyman_Damon_Connolly.jpg/330px-Assemblyman_Damon_Connolly.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Tief Gibbs",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "4": [
+      {
+        "name": "Jaron Brandon",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Alexandra Duarte",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "6": [
+      {
+        "name": "Roger Niello",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Roger_Niello%2C_2022.jpg/330px-Roger_Niello%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Sean Frame",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "8": [
+      {
+        "name": "Angelique Ashby",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Angelique_Ashby_headshot_%28cropped%29.jpg/330px-Angelique_Ashby_headshot_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Susan Mason",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "10": [
+      {
+        "name": "Scott Sakakihara",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Linda Price",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "12": [
+      {
+        "name": "Nathan Magsig",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "William Brown",
+        "party": "Libertarian",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "14": [
+      {
+        "name": "Esmeralda Soria",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Soria_portrait_2025_%28cropped%29.jpg/330px-Soria_portrait_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Darin DuPont",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "16": [
+      {
+        "name": "Melissa Hurtado",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Melissa_Hurtado.jpg/330px-Melissa_Hurtado.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Guillermo Gonzalez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "18": [
+      {
+        "name": "Steve Padilla",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Steve_Padilla%2C_2023.jpg/330px-Steve_Padilla%2C_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Art Hodges",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "20": [
+      {
+        "name": "Caroline Menjivar",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Caroline_Menjivar%2C_2026.jpg/330px-Caroline_Menjivar%2C_2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Tony Rodriguez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "22": [
+      {
+        "name": "Susan Rubio",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/14/SusanRubio-300x300_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      },
+      {
+        "name": "Mike Netter",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "24": [
+      {
+        "name": "John M. Erickson",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Brian Goldsmith",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "26": [
+      {
+        "name": "Sara Hernandez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Sarah Rascón",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "28": [
+      {
+        "name": "Lola Smallwood-Cuevas",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Member_of_the_California_Senate_Lola_Smallwood-Cuevas_%28cropped%29.jpg/330px-Member_of_the_California_Senate_Lola_Smallwood-Cuevas_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Joe Lisuzzo",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "30": [
+      {
+        "name": "Bob Archuleta",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Bob_Archuleta.jpg/330px-Bob_Archuleta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Araceli Martinez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "32": [
+      {
+        "name": "Kelly Seyarto",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Kelly_Seyarto%2C_2022.jpg/330px-Kelly_Seyarto%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Tiffanie Tate",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "34": [
+      {
+        "name": "Avelino Valencia",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Avelino_Valencia%2C_2022.jpg/330px-Avelino_Valencia%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Rhonda Shader",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "36": [
+      {
+        "name": "Tony Strickland",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Senator_Tony_Strickland_-_California_State_Senate_Official_Headshot.jpg/330px-Senator_Tony_Strickland_-_California_State_Senate_Official_Headshot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Chris Duncan",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "38": [
+      {
+        "name": "Catherine Blakespear",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/2025_portrait_Catherine_Blakespear.jpg/330px-2025_portrait_Catherine_Blakespear.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Laura Bassett",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "40": [
+      {
+        "name": "Kristie Bruce-Lane",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Mara Elliott",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1d/CityAttorneyMaraElliott.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      }
+    ],
+    "_verify": []
+  },
+  "assembly": {
+    "1": [
+      {
+        "name": "Heather Hadwick",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Heather_Hadwick%2C_2025_%28cropped%29.jpg/330px-Heather_Hadwick%2C_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Dianna Margaret James",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "2": [
+      {
+        "name": "Chris Rogers",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Chris_Rogers%2C_2024.jpg/330px-Chris_Rogers%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Michael Greer",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "3": [
+      {
+        "name": "Dom Belza",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "James \"Jamie\" Johansson",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "4": [
+      {
+        "name": "Cecilia Aguiar-Curry",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Assemblymember_Cecilia_M._Aguiar-Curry_official_portrait.jpg/330px-Assemblymember_Cecilia_M._Aguiar-Curry_official_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "5": [
+      {
+        "name": "Joe Patterson",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/California_State_Assembly_Member_Joe_Patterson.jpg/330px-California_State_Assembly_Member_Joe_Patterson.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Neva Parker",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "6": [
+      {
+        "name": "Maggy Krell",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Maggy_Krell_2025.jpg/330px-Maggy_Krell_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Jagtar Singh",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "7": [
+      {
+        "name": "Josh Hoover",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Member_of_the_California_State_Assembly_Josh_Hoover_%28cropped%29.jpg/330px-Member_of_the_California_State_Assembly_Josh_Hoover_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Amy Slavensky",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "8": [
+      {
+        "name": "David Tangipa",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/David_Tangipa%2C_2025_%28cropped%29.jpg/330px-David_Tangipa%2C_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "9": [
+      {
+        "name": "Heath Flora",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Heath_Flora%2C_2020_%28cropped%29.jpg/330px-Heath_Flora%2C_2020_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Matthew Adams",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "10": [
+      {
+        "name": "Stephanie Nguyen",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Stephanie_Nguyen_Portrait.jpg/330px-Stephanie_Nguyen_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Vinaya Singh",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "11": [
+      {
+        "name": "Lori Wilson",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Lori_Wilson%2C_2025.jpg/330px-Lori_Wilson%2C_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Jenny Leilani Callison",
+        "party": "No Party Preference",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "12": [
+      {
+        "name": "Jackie Elward",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Eric Lucan",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "13": [
+      {
+        "name": "Rhodesia Ransom",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Rhodesia_Ransom%2C_2024.jpg/330px-Rhodesia_Ransom%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Tom Patti",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Tpatti21_%28Crop%29.png/330px-Tpatti21_%28Crop%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "14": [
+      {
+        "name": "Buffy Wicks",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Buffy_Wicks%2C_2024.jpg/330px-Buffy_Wicks%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Mark Rendon",
+        "party": "Green",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "15": [
+      {
+        "name": "Anamarie Avila Farias",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Anamarie_Avila_Farias%2C_2024.jpg/330px-Anamarie_Avila_Farias%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Arthur Webb",
+        "party": "No Party Preference",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "16": [
+      {
+        "name": "Rebecca Bauer-Kahan",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Bauer_Kahan_portrait.jpg/330px-Bauer_Kahan_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Joseph Rubay",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "17": [
+      {
+        "name": "Matt Haney",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Matt_Haney%2C_2022.jpg/330px-Matt_Haney%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Manuel Noris-Barrera",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "18": [
+      {
+        "name": "Mia Bonta",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Mia_Bonta%2C_2022_%28cropped%29.jpg/330px-Mia_Bonta%2C_2022_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Andre Sandford",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "19": [
+      {
+        "name": "Catherine Stefani",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Catherine_Stefani%2C_2024.jpg/330px-Catherine_Stefani%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Philip Wing",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "20": [
+      {
+        "name": "Liz Ortega",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Liz_Ortega_official_photo_%28cropped%29.jpg/330px-Liz_Ortega_official_photo_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Patricia Muga",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "21": [
+      {
+        "name": "Diane Papan",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Diane_Papan%2C_2022.jpg/330px-Diane_Papan%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Jabra Muhawieh",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "22": [
+      {
+        "name": "Juan Alanis",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Juan_Alanis%2C_2023.jpg/330px-Juan_Alanis%2C_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      }
+    ],
+    "23": [
+      {
+        "name": "Marc Berman",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Berman%25_20Headshot%25_202021_14.jpg/330px-Berman%25_20Headshot%25_202021_14.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "David Johnson",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "24": [
+      {
+        "name": "Alex Lee",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Alex_Lee%2C_2025_%28cropped%29.jpg/330px-Alex_Lee%2C_2025_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Max Hsia",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "25": [
+      {
+        "name": "Ash Kalra",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ash_Kalra_Silicon_Valley_African_Film_Festival_2026_01_%28cropped%29.jpg/330px-Ash_Kalra_Silicon_Valley_African_Film_Festival_2026_01_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Himat Singh Bainiwal",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "26": [
+      {
+        "name": "Patrick Ahrens",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Patrick_Ahrens_Headshot_2024.jpg/330px-Patrick_Ahrens_Headshot_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Tim Gorsulowsky",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "27": [
+      {
+        "name": "Mike Murphy",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Brian Pacheco",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "28": [
+      {
+        "name": "Gail Pellerin",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Gail_Pellerin.jpg/330px-Gail_Pellerin.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Carol Pefley",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "29": [
+      {
+        "name": "Robert Rivas",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Robert_Rivas_official_speaker_portrait.jpg/330px-Robert_Rivas_official_speaker_portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Dennis Sanchez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "30": [
+      {
+        "name": "Dawn Addis",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Assemblywoman_Dawn_Addis.jpg/330px-Assemblywoman_Dawn_Addis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Shannon Kessler",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "31": [
+      {
+        "name": "Annalisa Perea",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Jim Polsgrove",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "32": [
+      {
+        "name": "David Couch",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "33": [
+      {
+        "name": "Alexandra Macedo",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Alexandra_Macedo%2C_2024.jpg/330px-Alexandra_Macedo%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Hipolito Cerros",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "34": [
+      {
+        "name": "Charles Hughes",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Randall Putz",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "35": [
+      {
+        "name": "Andrae Gonzales",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Saul Ayon",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "36": [
+      {
+        "name": "Jeff Gonzalez",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Jeff_Gonzalez%2C_2024.jpg/330px-Jeff_Gonzalez%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Ida Obeso-Martinez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "37": [
+      {
+        "name": "Gregg Hart",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Gregg_Hart_%28cropped%29.jpg/330px-Gregg_Hart_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Sari Domingues",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "38": [
+      {
+        "name": "Steve Bennett",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/California_State_Assembly_Member_Steve_Bennett.jpg/330px-California_State_Assembly_Member_Steve_Bennett.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Michael MacDonald",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "39": [
+      {
+        "name": "Juan Carrillo",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Juan_Carrillo.jpg/330px-Juan_Carrillo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Paul Marsh",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "40": [
+      {
+        "name": "Pilar Schiavo",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Schiavo_Assembly_Portrait.jpg/330px-Schiavo_Assembly_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Rickey Hayes II",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "41": [
+      {
+        "name": "John Harabedian",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/John_Harabedian%2C_2024.jpg/330px-John_Harabedian%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Adam Vena",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "42": [
+      {
+        "name": "Deborah Klein Lopez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Ted Nordblum",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "43": [
+      {
+        "name": "Celeste Rodriguez",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Celeste_Rodriguez%2C_2024.jpg/330px-Celeste_Rodriguez%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Ricardo Benitez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "44": [
+      {
+        "name": "Nick Schultz",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Nick_Schultz%2C_2024.jpg/330px-Nick_Schultz%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Carolyn Daniels",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "45": [
+      {
+        "name": "James Ramos",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/James_Ramos_CA_Assembly_official_photo.jpg/330px-James_Ramos_CA_Assembly_official_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Greg Abdouch",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "46": [
+      {
+        "name": "Jesse Gabriel",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/State_Assemblyman_Jesse_Gabriel_joins_protesters_in_Westwood.jpg/330px-State_Assemblyman_Jesse_Gabriel_joins_protesters_in_Westwood.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Tracey Schroeder",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "47": [
+      {
+        "name": "Greg Wallis",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Greg_Wallis%2C_2023.jpg/330px-Greg_Wallis%2C_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Leila Namvar",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "48": [
+      {
+        "name": "Blanca Rubio",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Blanca_Rubio.jpg/330px-Blanca_Rubio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Dan Tran",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "49": [
+      {
+        "name": "Mike Fong",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Mike_Fong_portait%2C_2022.jpg/330px-Mike_Fong_portait%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Long David Liu",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "50": [
+      {
+        "name": "Robert Garcia",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Robert_Garcia%2C_2024.jpg/330px-Robert_Garcia%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Victoria Viveros Mageno",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "51": [
+      {
+        "name": "Rick Zbur",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Rick_Chavez_Zbur%2C_2022.jpg/330px-Rick_Chavez_Zbur%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Colin Hernandez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "52": [
+      {
+        "name": "Jessica Caloza",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Headshot_-_Jessica_Caloza_-_CA_State_Assembly_District_52.jpg/330px-Headshot_-_Jessica_Caloza_-_CA_State_Assembly_District_52.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Andrea Lee Anderson",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "53": [
+      {
+        "name": "Michelle Rodriguez",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Michelle_Rodriguez%2C_2024.jpg/330px-Michelle_Rodriguez%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Rafaela Romero",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "54": [
+      {
+        "name": "Mark Gonzalez",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Mark_Gonzalez%2C_2024.jpg/330px-Mark_Gonzalez%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Alexandra Briseno",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "55": [
+      {
+        "name": "Isaac Bryan",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Isaac_Bryan%2C_2022.jpg/330px-Isaac_Bryan%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Ashley Brown",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "56": [
+      {
+        "name": "Lisa Calderon",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Calderon-003_10_%28cropped%29.jpg/330px-Calderon-003_10_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Jessica Martinez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "57": [
+      {
+        "name": "Sade Elhawary",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Sade_Elhawary%2C_2024.jpg/330px-Sade_Elhawary%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Constance Menzies",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "58": [
+      {
+        "name": "Leticia Castillo",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Asm._Leticia_Castillo_speaking_at_Fireproof_California%2C_2025_%282%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+      },
+      {
+        "name": "Clarissa Cervantes",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "59": [
+      {
+        "name": "Phillip Chen",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Phillip_Chen_official_headshot.jpg/330px-Phillip_Chen_official_headshot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Victor Hernandez",
+        "party": "Green",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "60": [
+      {
+        "name": "Corey Jackson",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/California_State_Assembly_Member_Corey_Jackson.jpg/330px-California_State_Assembly_Member_Corey_Jackson.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Ed Delgado",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "61": [
+      {
+        "name": "Tina McKinnor",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Assemblymember_Tina_McKinnor.jpg/330px-Assemblymember_Tina_McKinnor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Brian Lockwood",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "62": [
+      {
+        "name": "José Solache",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Jose_Solache%2C_2024.jpg/330px-Jose_Solache%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Paul Irving Jones",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "63": [
+      {
+        "name": "Natasha Johnson",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Natasha_Johnson%2C_2026_%28cropped%29.jpg/330px-Natasha_Johnson%2C_2026_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Kevin Akin",
+        "party": "Peace and Freedom",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "64": [
+      {
+        "name": "Blanca Pacheco",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Blanca_Pacheco.jpg/330px-Blanca_Pacheco.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Raul Ortiz Jr.",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "65": [
+      {
+        "name": "Ayanna Davis",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Lydia Gutiérrez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "66": [
+      {
+        "name": "Sara Deen",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "Paul Seo",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "67": [
+      {
+        "name": "Mark Pulido",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Mark_Pulido_portrait_2025.jpg/330px-Mark_Pulido_portrait_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Paulo Morales",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "68": [
+      {
+        "name": "Jessie Lopez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      },
+      {
+        "name": "David Penaloza",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "69": [
+      {
+        "name": "Josh Lowenthal",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Josh_Lowenthal.jpg/330px-Josh_Lowenthal.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Carolyn Essex",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "70": [
+      {
+        "name": "Tri Ta",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Tri_Ta%2C_2022_%28cropped%29.jpg/330px-Tri_Ta%2C_2022_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Paula Swift",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "71": [
+      {
+        "name": "Kate Sanchez",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Kate_Sanchez_-2026.jpg/330px-Kate_Sanchez_-2026.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "JJ Galvez",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "72": [
+      {
+        "name": "Chris Kluwe",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Chris_Kluwe_2012-12-30.jpg/330px-Chris_Kluwe_2012-12-30.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Gracey Van Der Mark",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "73": [
+      {
+        "name": "Cottie Petrie-Norris",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Cottie_Petrie-Norris_CA_Assembly_official_photo.jpg/330px-Cottie_Petrie-Norris_CA_Assembly_official_photo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Urson Russell",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "74": [
+      {
+        "name": "Laurie Davies",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Assemblywoman_Laurie_Davies.jpg/330px-Assemblywoman_Laurie_Davies.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Sergio Farias",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "75": [
+      {
+        "name": "Carl DeMaio",
+        "party": "Republican",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Carl_DeMaio%2C_California_State_Assembly_Portrait.jpg/330px-Carl_DeMaio%2C_California_State_Assembly_Portrait.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Gerald Boursiquot",
+        "party": "Democratic",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "76": [
+      {
+        "name": "Darshana Patel",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Darshana_Patel%2C_2024.jpg/330px-Darshana_Patel%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Carrie Espinoza Villanueva",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "77": [
+      {
+        "name": "Tasha Boerner",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Tasha_Boerner%2C_2026_%28cropped%29.png/330px-Tasha_Boerner%2C_2026_%28cropped%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Trinity Hannaway",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "78": [
+      {
+        "name": "Chris Ward",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Chris_Ward%2C_2025.jpg/330px-Chris_Ward%2C_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Payton Galvez",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "79": [
+      {
+        "name": "LaShae Sharp-Collins",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/LaShae_Sharp-Collins%2C_2024.jpg/330px-LaShae_Sharp-Collins%2C_2024.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Andrew Lawson",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "80": [
+      {
+        "name": "David Alvarez",
+        "party": "Democratic",
+        "incumbent": true,
+        "photoUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/David_Alvarez%2C_2022.jpg/330px-David_Alvarez%2C_2022.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+      },
+      {
+        "name": "Alejandro Galicia",
+        "party": "Republican",
+        "incumbent": false,
+        "photoUrl": null
+      }
+    ],
+    "_verify": [
+      "42"
+    ],
+    "_verifyNotes": {
+      "42": "infobox nominees: Deborah Klein Lopez / Ted Norblum"
+    }
+  }
+}
