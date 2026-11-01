@@ -191,7 +191,7 @@ function CardFace({ text, image, dim = false }: { text: string; image: string; d
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${image}), ${fallbackBg}` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/35 to-black/95" />
       <div className="absolute inset-x-0 bottom-0 p-6 pb-8">
         <p className={`font-display text-[1.65rem] font-medium leading-[1.18] text-white text-balance drop-shadow-[0_2px_12px_rgba(0,0,0,.6)] ${dim ? "opacity-0" : ""}`}>
           {text}

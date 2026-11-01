@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { motion } from "motion/react";
 import type { Confidence, RacePick, Results } from "@/lib/types";
 import { Avatar } from "./Avatar";
@@ -130,7 +130,7 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
         )}
       </section>
 
-      <EmailForm results={r} />
+      <EmailForm />
 
       <section className="no-print mt-8 grid grid-cols-2 gap-3">
         <button onClick={() => window.print()} className="h-12 rounded-2xl border border-white/15 font-medium transition hover:bg-white/5">
@@ -157,6 +157,11 @@ export function ResultsView({ results, onRestart }: { results: Results; onRestar
           {r.districts.senate ? ` · SD ${r.districts.senate}` : ""}
           {r.districts.assembly ? ` · AD ${r.districts.assembly}` : ""}
           {r.districts.boe ? ` · BOE ${r.districts.boe}` : ""}
+        </p>
+        <p>
+          <a className="underline" href="/credits" target="_blank" rel="noreferrer">
+            Photo credits
+          </a>
         </p>
         {r.sources.length > 0 && (
           <details>
@@ -226,10 +231,10 @@ function PickCard({ p, i }: { p: RacePick; i: number }) {
           </p>
           <p className="mt-2 text-[15px] leading-relaxed text-paper/80">{p.reason}</p>
           <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
-            <ConfChip c={p.confidence} />
+            {p.pick && <ConfChip c={p.confidence} />}
             {p.others.length > 0 && (
               <span className="mt-2 flex items-center gap-1.5 text-xs text-muted">
-                over
+                {p.pick ? "over" : "Finalists:"}
                 {p.others.map((o) => (
                   <span key={o.name} className="inline-flex items-center gap-1.5">
                     <Avatar person={o} size={20} />
@@ -246,56 +251,29 @@ function PickCard({ p, i }: { p: RacePick; i: number }) {
   );
 }
 
-function EmailForm({ results }: { results: Results }) {
-  const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [msg, setMsg] = useState("");
-
-  async function send(e: React.FormEvent) {
-    e.preventDefault();
-    setState("sending");
-    try {
-      const res = await fetch("/api/email", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ email, results }),
-      });
-      const j = await res.json().catch(() => ({}));
-      if (!res.ok) throw new Error(j.error ?? "Couldn't send.");
-      setState("sent");
-      setMsg(`Sent to ${email}. Check your inbox (and spam folder).`);
-    } catch (err) {
-      setState("error");
-      setMsg(err instanceof Error ? err.message : "Couldn't send.");
-    }
-  }
-
+/** Email delivery is disabled until a sending domain is set up — shown greyed out with a "Coming soon" hover. */
+function EmailForm() {
   return (
-    <section className="no-print mt-14 rounded-3xl bg-gradient-to-br from-ember/25 via-ember/10 to-transparent p-6">
+    <section
+      className="no-print group relative mt-14 cursor-not-allowed rounded-3xl border border-white/10 bg-white/[0.03] p-6 opacity-50 grayscale"
+      title="Coming soon"
+    >
+      <span className="pointer-events-none absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-paper px-3 py-1 text-xs font-semibold text-ink opacity-0 shadow-lg transition group-hover:opacity-100">
+        Coming soon
+      </span>
       <h2 className="font-display text-2xl font-medium">Take your picks to the polls</h2>
-      <p className="mt-1 text-sm text-paper/70">We&apos;ll email you this ballot. We don&apos;t store your address or add you to any list.</p>
-      {state === "sent" ? (
-        <p className="mt-4 rounded-xl bg-sage/15 px-4 py-3 text-sm text-sage">{msg}</p>
-      ) : (
-        <form onSubmit={send} className="mt-4 flex flex-col gap-3 sm:flex-row">
-          <input
-            type="email"
-            required
-            autoComplete="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="you@example.com"
-            className="h-12 min-w-0 flex-1 rounded-xl border border-white/15 bg-ink/60 px-4 outline-none focus:border-ember"
-          />
-          <button
-            disabled={state === "sending"}
-            className="h-12 rounded-xl bg-paper px-6 font-semibold text-ink transition hover:bg-white disabled:opacity-60"
-          >
-            {state === "sending" ? "Sending…" : "Email me"}
-          </button>
-        </form>
-      )}
-      {state === "error" && <p className="mt-3 text-sm text-rose">{msg}</p>}
+      <p className="mt-1 text-sm text-paper/70">Email yourself this ballot. For now, use Print / save PDF below.</p>
+      <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+        <input
+          type="email"
+          disabled
+          placeholder="you@example.com"
+          className="pointer-events-none h-12 min-w-0 flex-1 rounded-xl border border-white/15 bg-ink/60 px-4"
+        />
+        <button disabled className="pointer-events-none h-12 rounded-xl bg-paper px-6 font-semibold text-ink">
+          Email me
+        </button>
+      </div>
     </section>
   );
 }

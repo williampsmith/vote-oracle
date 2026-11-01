@@ -36,6 +36,9 @@ export function Intro({ onStart }: { onStart: () => void }) {
       >
         Let&apos;s go
       </button>
+      <a href="/credits" target="_blank" rel="noreferrer" className="mt-4 text-center text-xs text-muted underline-offset-2 hover:underline">
+        Photo credits
+      </a>
     </section>
   );
 }

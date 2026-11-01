@@ -50,17 +50,30 @@ export function Analyzing({
     return () => clearInterval(t);
   }, []);
 
+  // Keep the latest callback without re-triggering the request.
+  const onDoneRef = useRef(onDone);
   useEffect(() => {
-    if (started.current === attempt) return; // guard against StrictMode double-invoke
+    onDoneRef.current = onDone;
+  }, [onDone]);
+  const alive = useRef(true);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    // One request per attempt. We deliberately don't abort on effect cleanup: React dev
+    // StrictMode runs effects twice, and aborting there would strand the reading.
+    if (started.current === attempt) return;
     started.current = attempt;
-    const ctrl = new AbortController();
     (async () => {
       try {
         const res = await fetch("/api/analyze", {
           method: "POST",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ answers, priorities, location: ballot.location }),
-          signal: ctrl.signal,
         });
         if (!res.ok || !res.body) {
           const j = await res.json().catch(() => ({}));
@@ -72,6 +85,10 @@ export function Analyzing({
         for (;;) {
           const { value, done } = await reader.read();
           if (done) break;
+          if (!alive.current) {
+            reader.cancel().catch(() => {});
+            return;
+          }
           buf += decoder.decode(value, { stream: true });
           const lines = buf.split("\n");
           buf = lines.pop() ?? "";
@@ -84,19 +101,17 @@ export function Analyzing({
             else if (ev.type === "result") {
               setStage("done");
               await new Promise((r) => setTimeout(r, 700));
-              onDone(ev.data);
+              if (alive.current) onDoneRef.current(ev.data);
               return;
             }
           }
         }
         throw new Error("The connection closed before your picks were ready.");
       } catch (e) {
-        if (ctrl.signal.aborted) return;
-        setError(e instanceof Error ? e.message : "Something went wrong.");
+        if (alive.current) setError(e instanceof Error ? e.message : "Something went wrong.");
       }
     })();
-    return () => ctrl.abort();
-  }, [attempt, answers, priorities, ballot, onDone]);
+  }, [attempt, answers, priorities, ballot]);
 
   const stageIdx = stage === "done" ? STAGES.length : STAGES.findIndex((s) => s.id === stage);
 
@@ -143,7 +158,7 @@ export function Analyzing({
               key={l + i}
               initial={{ opacity: 0, x: -6 }}
               animate={{ opacity: i === logs.length - 1 ? 1 : 0.55, x: 0 }}
-              className="truncate"
+              className="line-clamp-2"
             >
               <span className="text-ember">›</span> {l}
             </motion.p>

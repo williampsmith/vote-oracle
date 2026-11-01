@@ -10,9 +10,10 @@ const body = z.object({ answers: answersSchema, priorities: prioritiesSchema, lo
 
 export async function POST(req: Request) {
   // 4 analyses per IP per hour, max 1 per minute burst-wise.
-  const burst = rateLimit(req, "analyze-min", 1, 60_000);
+  const dev = process.env.NODE_ENV !== "production";
+  const burst = dev ? ({ ok: true } as const) : rateLimit(req, "analyze-min", 1, 60_000);
   if (!burst.ok) return tooMany(burst.retryAfter, "One reading at a time — give the Oracle a minute.");
-  const hourly = rateLimit(req, "analyze-hr", 4, 60 * 60_000);
+  const hourly = dev ? ({ ok: true } as const) : rateLimit(req, "analyze-hr", 4, 60 * 60_000);
   if (!hourly.ok) return tooMany(hourly.retryAfter, "You've hit the hourly limit for readings. Please try again later.");
   const parsed = body.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return Response.json({ error: "Invalid request." }, { status: 400 });
@@ -26,7 +27,9 @@ export async function POST(req: Request) {
         } catch {}
       };
       try {
-        const data = await analyze(parsed.data, emit);
+        // Local-only model override for side-by-side comparisons.
+        const override = dev ? req.headers.get("x-oracle-model") ?? undefined : undefined;
+        const data = await analyze(parsed.data, emit, override);
         emit({ type: "result", data });
       } catch (e) {
         console.error("analysis failed", e);

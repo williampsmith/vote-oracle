@@ -6,21 +6,23 @@ import { buildBallot, ELECTION_DATE, type Location, type Race } from "./ballot";
 import { research, researchEnabled, researchLocal, researchRace, type LocalContests } from "./research";
 import type { PersonCard, Results, StreamEvent } from "./types";
 
-export const MODEL = process.env.ORACLE_MODEL ?? "anthropic/claude-sonnet-5.5";
+export const MODEL = process.env.ORACLE_MODEL ?? "deepseek/deepseek-v4.1-flash";
+/** Used only if the primary model errors or returns an incomplete ballot. */
+export const FALLBACK_MODEL = process.env.ORACLE_FALLBACK_MODEL ?? "anthropic/claude-haiku-5.5";
 
 const confidence = z.enum(["strong", "lean", "tossup"]);
 
 const outputSchema = z.object({
   archetype: z.object({
-    title: z.string().describe("A playful, flattering, NON-partisan 2-4 word voter archetype, e.g. 'The Pragmatic Builder'. Never a party or ideology label."),
+    title: z.string().describe("A playful, flattering, NON-partisan 2-4 word voter archetype starting with 'The', e.g. 'The Pragmatic Builder' or 'The Hometown Maverick'. Never a party or ideology label, never generic like 'Voter Profile'."),
     summary: z.string().describe("Two sentences describing what this voter values, in second person."),
   }),
   races: z.array(
     z.object({
       raceId: z.string(),
-      pick: z.string().nullable().describe("Exact candidate name from the ballot, or null to recommend leaving it blank."),
+      pick: z.string().nullable().describe("The candidate's name copied EXACTLY as written on the ballot above, or null to recommend leaving it blank."),
       confidence,
-      reason: z.string().describe("1-2 short sentences (max ~35 words) tying the pick to this voter's own answers."),
+      reason: z.string().describe("At most 2 short sentences, max 35 words total, tying the pick to this voter's own answers."),
     }),
   ),
   propositions: z.array(
@@ -50,10 +52,10 @@ Your job: recommend how THIS voter would most likely vote on every contest on th
 How to reason:
 1. Build a picture of the voter from their axis scores, their top priorities, and especially their individual answers (the specific statements they agreed or disagreed with are the richest signal). Weigh their stated top priorities most heavily.
 2. For each race, compare the candidates' documented records and positions (from the dossier and any research you do) against the voter's values. Two candidates of the same party can differ a lot — look at the actual issues. Never assume a voter's party; let the issues decide.
-3. Voting strategy matters. A "Pragmatic" voter wants the viable candidate closest to them and values competence/effectiveness. A "Pure conviction" voter may prefer leaving a race blank if both finalists clearly conflict with their core values — only recommend a blank (pick = null) in that case, and say so plainly. California uses top-two, so every race has exactly the listed finalists (some are unopposed).
+3. Voting strategy matters. A "Pragmatic" voter wants the viable candidate closest to them and values competence/effectiveness. A "Pure conviction" voter may prefer leaving a race blank if both finalists clearly conflict with their core values — only recommend a blank (pick = null) in that case, and the reason must then explain why NEITHER finalist fits (not argue for one of them). A "Pragmatic" voter should almost never get a blank. California uses top-two, so every race has exactly the listed finalists (some are unopposed).
 4. Propositions: map yes/no to the voter's values via what a YES actually does. Use "undecided" only when the voter's answers genuinely point both ways.
 5. Confidence: "strong" when the evidence clearly aligns, "lean" for a moderate fit, "tossup" when it's close.
-6. Reasons: 1-2 short sentences, second person, concrete ("You favored building near transit; Wiener authored the state's biggest transit-housing bills."). No party cheerleading, no insults, no loaded language. Never invent facts — if the dossier is thin, say what you're relying on.
+6. Only cite answers the voter actually gave (listed below) — never attribute a view to them that isn't in their answers; if you are inferring, say so briefly. Never quote numeric axis scores to the voter. Reasons: 1-2 short sentences, second person, concrete ("You favored building near transit; Wiener authored the state's biggest transit-housing bills."). No party cheerleading, no insults, no loaded language. Never invent facts — if the dossier is thin, say what you're relying on.
 7. Use the research tool sparingly (max ~4 calls) only to fill real gaps, e.g. a district candidate with no documented positions. Don't research things already in the dossier.
 8. Return a recommendation for EVERY raceId and EVERY proposition listed. For "local", return null if no local research was provided; otherwise cover the contests and measures provided.`;
 
@@ -89,10 +91,39 @@ const toCard = (c: Race["candidates"][number]): PersonCard => ({
 });
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z]/g, "");
+const words = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z\s]/g, " ")
+    .split(/\s+/)
+    .filter((w) => w.length > 1);
+
+/** Match a model-written name ("Don Wagner") to the ballot's ("Donald P. (Don) Wagner"). */
+function matchCandidate<T extends { name: string }>(pick: string, candidates: T[]): T | null {
+  const exact = candidates.find((c) => norm(c.name) === norm(pick));
+  if (exact) return exact;
+  const pw = words(pick);
+  const scored = candidates
+    .map((c) => {
+      const cw = words(c.name);
+      const last = cw[cw.length - 1];
+      return { c, last: pw.includes(last), overlap: pw.filter((w) => cw.includes(w)).length };
+    })
+    .filter((x) => x.last)
+    .sort((a, b) => b.overlap - a.overlap);
+  return scored.length === 1 || (scored[0] && scored[0].overlap > (scored[1]?.overlap ?? 0)) ? scored[0].c : null;
+}
+
+/** Keep justifications to two sentences, whatever the model wrote. */
+function brief(text: string) {
+  const sentences = text.trim().match(/[^.!?]+[.!?]+(\s|$)|[^.!?]+$/g) ?? [text];
+  return sentences.slice(0, 2).join("").trim();
+}
 
 export async function analyze(
   input: { answers: Answers; priorities: Axis[]; location: Location },
   emit: (e: StreamEvent) => void,
+  model: string = MODEL,
 ): Promise<Results> {
   const { answers, priorities, location } = input;
   const sources: Results["sources"] = [];
@@ -199,9 +230,9 @@ ${localNow ? JSON.stringify(localNow, null, 1) : "None provided — return local
       }
     : undefined;
 
-  const run = () =>
+  const run = (m: string) =>
     generateText({
-      model: MODEL,
+      model: m,
       instructions: INSTRUCTIONS,
       prompt,
       tools,
@@ -209,22 +240,33 @@ ${localNow ? JSON.stringify(localNow, null, 1) : "None provided — return local
       output: Output.object({ schema: outputSchema }),
       maxOutputTokens: 16000,
     });
-  let output: z.infer<typeof outputSchema>;
+  const raceIds = new Set(ballot.races.map((r) => r.id));
+  const propNums = new Set(ballot.propositions.map((p) => p.number));
+  const complete = (o: z.infer<typeof outputSchema>) =>
+    o.races.filter((r) => raceIds.has(r.raceId)).length >= raceIds.size &&
+    o.propositions.filter((p) => propNums.has(p.number.replace(/\D/g, ""))).length >= propNums.size;
+
+  let output: z.infer<typeof outputSchema> | null = null;
   try {
-    output = (await run()).output;
+    const o = (await run(model)).output;
+    if (complete(o)) output = o;
+    else console.warn(`[oracle] ${model} returned an incomplete ballot; falling back`);
   } catch (e) {
-    console.warn("analysis attempt 1 failed, retrying", e);
+    console.warn(`[oracle] ${model} failed; falling back`, e);
+  }
+  if (!output) {
     emit({ type: "log", label: "Double-checking a few picks…" });
-    output = (await run()).output;
+    output = (await run(model === FALLBACK_MODEL ? MODEL : FALLBACK_MODEL)).output;
   }
 
+  if (process.env.ORACLE_DEBUG) console.log("[oracle] output", JSON.stringify(output).slice(0, 1500));
   emit({ type: "stage", stage: "finalizing", label: "Polishing your personal ballot" });
 
   // ---- Assemble -------------------------------------------------------------
   const byRace = new Map(output.races.map((r) => [r.raceId, r]));
   const picks: Results["picks"] = ballot.races.map((race) => {
     const rec = byRace.get(race.id);
-    const chosen = rec?.pick ? race.candidates.find((c) => norm(c.name) === norm(rec.pick!)) ?? null : null;
+    const chosen = rec?.pick ? matchCandidate(rec.pick, race.candidates) : null;
     return {
       raceId: race.id,
       office: race.office,
@@ -232,7 +274,7 @@ ${localNow ? JSON.stringify(localNow, null, 1) : "None provided — return local
       pick: chosen ? toCard(chosen) : null,
       others: race.candidates.filter((c) => c !== chosen).map(toCard),
       confidence: rec?.confidence ?? "tossup",
-      reason: rec?.reason ?? "We couldn't form a confident recommendation for this race.",
+      reason: rec?.reason ? brief(rec.reason) : "We couldn't form a confident recommendation for this race.",
     };
   });
 
@@ -244,7 +286,7 @@ ${localNow ? JSON.stringify(localNow, null, 1) : "None provided — return local
       title: p.title.replace(/\s*(Initiative|Legislative)[^.]*\.\s*$/i, "").replace(/\.$/, ""),
       vote: rec?.vote ?? "undecided",
       confidence: rec?.confidence ?? "tossup",
-      reason: rec?.reason ?? "Your answers point both ways on this one.",
+      reason: rec?.reason ? brief(rec.reason) : "Your answers point both ways on this one.",
     };
   });
 
@@ -256,13 +298,13 @@ ${localNow ? JSON.stringify(localNow, null, 1) : "None provided — return local
         pick: c.pick,
         candidates: localNow.contests.find((x) => x.office === c.office)?.candidates.map((x) => x.name) ?? [],
         confidence: c.confidence,
-        reason: c.reason,
+        reason: brief(c.reason),
       })),
       measures: output.local.measures.map((m) => ({
         name: m.name,
         title: localNow.measures.find((x) => x.name === m.name)?.title ?? "",
         vote: m.vote,
-        reason: m.reason,
+        reason: brief(m.reason),
       })),
     };
   }
