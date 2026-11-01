@@ -35,7 +35,7 @@ There are no accounts, and all state lives in memory, so a refresh starts over. 
 | Research | [treg](https://treg.to) `exa.web.answer` (cited web answers), cached 6h in Vercel Runtime Cache |
 | Districts | Offline point-in-polygon on simplified GeoJSON. U.S. House: Prop 50 / AB 604 map. State Senate and Assembly: 2021 Citizens Redistricting Commission (CRC) maps. Board of Equalization: 2021 CRC map. |
 | ZIP lookup | `src/data/zips.json`: population share of each CA ZIP across districts, counties and cities, built from 2020 census blocks |
-| Protection | Passcode (HMAC cookie, 30 days) enforced in `src/proxy.ts`; per-IP rate limits on every API route |
+| Protection | Passcode gate (HMAC cookie, 30 days) enforced in `src/proxy.ts`; per-IP rate limits on every API route |
 
 ## Project layout
 
@@ -68,7 +68,7 @@ pnpm dev
 
 | Name | Required | Purpose |
 |---|---|---|
-| `APP_PASSCODE` | required | Access passcode for the site. |
+| `APP_PASSCODE` | optional | Site passcode. If set, visitors must enter it; if unset, the site is open. |
 | `TREG_TOKEN` | optional | Enables live research and local contests. Without it, picks use the bundled data only. |
 | `ORACLE_MODEL` / `ORACLE_FALLBACK_MODEL` | optional | Override the primary and fallback AI Gateway models |
 | `ORACLE_DEBUG` | optional | Log raw model output |
