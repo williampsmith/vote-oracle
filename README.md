@@ -1,6 +1,6 @@
 # Vote Oracle
 
-A private, household-only web app that helps a California voter make an informed choice on every race and proposition on the **November 3, 2026** general election ballot.
+A web app that helps a California voter make an informed choice on every race and proposition on the **November 3, 2026** general election ballot.
 
 Live: https://vote-oracle.vercel.app (passcode-protected)
 
@@ -35,7 +35,7 @@ There are no accounts, and all state lives in memory, so a refresh starts over. 
 | Research | [treg](https://treg.to) `exa.web.answer` (cited web answers), cached 6h in Vercel Runtime Cache |
 | Districts | Offline point-in-polygon on simplified GeoJSON. U.S. House: Prop 50 / AB 604 map. State Senate and Assembly: 2021 Citizens Redistricting Commission (CRC) maps. Board of Equalization: 2021 CRC map. |
 | ZIP lookup | `src/data/zips.json`: population share of each CA ZIP across districts, counties and cities, built from 2020 census blocks |
-| Protection | Household passcode (HMAC cookie, 30 days) enforced in `src/proxy.ts`; per-IP rate limits on every API route |
+| Protection | Optional passcode (HMAC cookie, 30 days) enforced in `src/proxy.ts`; per-IP rate limits on every API route |
 
 ## Project layout
 
@@ -68,7 +68,7 @@ pnpm dev
 
 | Name | Required | Purpose |
 |---|---|---|
-| `APP_PASSCODE` | recommended | Household passcode. If unset, the app is open. |
+| `APP_PASSCODE` | optional | Access passcode. If unset, the app is open to anyone. |
 | `TREG_TOKEN` | optional | Enables live research and local contests. Without it, picks use the bundled data only. |
 | `ORACLE_MODEL` / `ORACLE_FALLBACK_MODEL` | optional | Override the primary and fallback AI Gateway models |
 | `ORACLE_DEBUG` | optional | Log raw model output |
