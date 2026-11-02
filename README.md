@@ -92,3 +92,9 @@ vercel deploy --prod
 - AI Gateway usage is billed per token. DeepSeek V4.1 Flash costs a fraction of a cent per reading.
 - treg research costs about $0.005 per call, with a few calls per reading.
 - Rate limits: 1 reading per minute and 4 per hour per IP.
+
+## License
+
+Code is released under the [MIT License](LICENSE).
+
+The question photos in `public/questions/` are not covered by the MIT License. Each keeps its own license (mostly CC BY-SA and CC BY), and full attribution is in `src/data/image-credits.json` and on the `/credits` page.
